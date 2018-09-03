@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		2C1A9F0F20EE043E00E21FEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F0E20EE043E00E21FEA /* AppDelegate.m */; };
 		2C1A9F1220EE043E00E21FEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F1120EE043E00E21FEA /* ViewController.m */; };
-		2C1A9F1520EE043E00E21FEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1A9F1320EE043E00E21FEA /* Main.storyboard */; };
-		2C1A9F1720EE043E00E21FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1A9F1620EE043E00E21FEA /* Assets.xcassets */; };
-		2C1A9F1A20EE043E00E21FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1A9F1820EE043E00E21FEA /* LaunchScreen.storyboard */; };
 		2C1A9F1D20EE043E00E21FEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F1C20EE043E00E21FEA /* main.m */; };
 		2C1A9F2720EE043E00E21FEA /* CKYSTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F2620EE043E00E21FEA /* CKYSTemplateTests.m */; };
 		2C1A9F3220EE043E00E21FEA /* CKYSTemplateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F3120EE043E00E21FEA /* CKYSTemplateUITests.m */; };
+		2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4AE02213CB7F400E43798 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +38,6 @@
 		2C1A9F0E20EE043E00E21FEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2C1A9F1020EE043E00E21FEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2C1A9F1120EE043E00E21FEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2C1A9F1420EE043E00E21FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2C1A9F1620EE043E00E21FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2C1A9F1920EE043E00E21FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C1A9F1B20EE043E00E21FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1A9F1C20EE043E00E21FEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C1A9F2220EE043E00E21FEA /* CKYSTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKYSTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +46,7 @@
 		2C1A9F2D20EE043E00E21FEA /* CKYSTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKYSTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1A9F3120EE043E00E21FEA /* CKYSTemplateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYSTemplateUITests.m; sourceTree = "<group>"; };
 		2C1A9F3320EE043E00E21FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA4AE02213CB7F400E43798 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +101,9 @@
 				2C1A9F0E20EE043E00E21FEA /* AppDelegate.m */,
 				2C1A9F1020EE043E00E21FEA /* ViewController.h */,
 				2C1A9F1120EE043E00E21FEA /* ViewController.m */,
-				2C1A9F1320EE043E00E21FEA /* Main.storyboard */,
-				2C1A9F1620EE043E00E21FEA /* Assets.xcassets */,
-				2C1A9F1820EE043E00E21FEA /* LaunchScreen.storyboard */,
 				2C1A9F1B20EE043E00E21FEA /* Info.plist */,
 				2C1A9F1C20EE043E00E21FEA /* main.m */,
+				2CA4AE02213CB7F400E43798 /* Images.xcassets */,
 			);
 			path = CKYSTemplate;
 			sourceTree = "<group>";
@@ -238,9 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C1A9F1A20EE043E00E21FEA /* LaunchScreen.storyboard in Resources */,
-				2C1A9F1720EE043E00E21FEA /* Assets.xcassets in Resources */,
-				2C1A9F1520EE043E00E21FEA /* Main.storyboard in Resources */,
+				2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,25 +293,6 @@
 			targetProxy = 2C1A9F2E20EE043E00E21FEA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2C1A9F1320EE043E00E21FEA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C1A9F1420EE043E00E21FEA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2C1A9F1820EE043E00E21FEA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C1A9F1920EE043E00E21FEA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2C1A9F3420EE043E00E21FEA /* Debug */ = {
@@ -430,12 +403,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CKYSTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ckys..CKYSTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -443,12 +418,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CKYSTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ckys..CKYSTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
