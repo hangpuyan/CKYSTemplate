@@ -2,6 +2,10 @@
 CKYSTemplate
 创客云商
 项目模板及代码规范
+
+1. 使用cocoapod 管理第三方库，必要时可以代码引入，放置在thirdlib
+2. podfile 传入git服务器即可
+
 1. AppDelegate
     1. AppDelegate 分类及helper类，负责拆分AppDelegate业务中代码，保证appdelegate中代码在300行之内，细分逻辑也业务进行抽离
 2. Classes
