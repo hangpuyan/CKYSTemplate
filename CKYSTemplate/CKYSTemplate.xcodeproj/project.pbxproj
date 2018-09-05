@@ -12,6 +12,7 @@
 		2C1A9F1D20EE043E00E21FEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F1C20EE043E00E21FEA /* main.m */; };
 		2C1A9F2720EE043E00E21FEA /* CKYSTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F2620EE043E00E21FEA /* CKYSTemplateTests.m */; };
 		2C1A9F3220EE043E00E21FEA /* CKYSTemplateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F3120EE043E00E21FEA /* CKYSTemplateUITests.m */; };
+		2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */; };
 		2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4AE02213CB7F400E43798 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,10 @@
 		2C1A9F2D20EE043E00E21FEA /* CKYSTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKYSTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1A9F3120EE043E00E21FEA /* CKYSTemplateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYSTemplateUITests.m; sourceTree = "<group>"; };
 		2C1A9F3320EE043E00E21FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAppSystemInfo.m; sourceTree = "<group>"; };
+		2C5BBF8F213FD0F000A1A6D0 /* CKAppSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAppSystemInfo.h; sourceTree = "<group>"; };
+		2C5BBF95213FD11500A1A6D0 /* CKYSScreenConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSScreenConst.h; sourceTree = "<group>"; };
+		2C5BBF96213FD11500A1A6D0 /* CKYSRequestServiceResultToastConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSRequestServiceResultToastConst.h; sourceTree = "<group>"; };
 		2CA4AE02213CB7F400E43798 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +154,8 @@
 		2C5BBF87213FCCB700A1A6D0 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				2C5BBF8F213FD0F000A1A6D0 /* CKAppSystemInfo.h */,
+				2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -156,6 +163,7 @@
 		2C5BBF88213FCCC000A1A6D0 /* framework */ = {
 			isa = PBXGroup;
 			children = (
+				2C5BBF91213FD11500A1A6D0 /* const */,
 				2C5BBF8A213FCD7C00A1A6D0 /* utility */,
 			);
 			path = framework;
@@ -196,6 +204,15 @@
 			children = (
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		2C5BBF91213FD11500A1A6D0 /* const */ = {
+			isa = PBXGroup;
+			children = (
+				2C5BBF95213FD11500A1A6D0 /* CKYSScreenConst.h */,
+				2C5BBF96213FD11500A1A6D0 /* CKYSRequestServiceResultToastConst.h */,
+			);
+			path = const;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */,
 				2C1A9F1220EE043E00E21FEA /* ViewController.m in Sources */,
 				2C1A9F1D20EE043E00E21FEA /* main.m in Sources */,
 				2C1A9F0F20EE043E00E21FEA /* AppDelegate.m in Sources */,
