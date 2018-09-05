@@ -97,8 +97,8 @@
 		2C1A9F0C20EE043E00E21FEA /* CKYSTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				2C1A9F0D20EE043E00E21FEA /* AppDelegate.h */,
-				2C1A9F0E20EE043E00E21FEA /* AppDelegate.m */,
+				2C5BBF85213FCC8700A1A6D0 /* AppDelegate */,
+				2C5BBF86213FCC9A00A1A6D0 /* Classes */,
 				2C1A9F1020EE043E00E21FEA /* ViewController.h */,
 				2C1A9F1120EE043E00E21FEA /* ViewController.m */,
 				2C1A9F1B20EE043E00E21FEA /* Info.plist */,
@@ -124,6 +124,78 @@
 				2C1A9F3320EE043E00E21FEA /* Info.plist */,
 			);
 			path = CKYSTemplateUITests;
+			sourceTree = "<group>";
+		};
+		2C5BBF85213FCC8700A1A6D0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2C1A9F0D20EE043E00E21FEA /* AppDelegate.h */,
+				2C1A9F0E20EE043E00E21FEA /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2C5BBF86213FCC9A00A1A6D0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C5BBF87213FCCB700A1A6D0 /* app */,
+				2C5BBF88213FCCC000A1A6D0 /* framework */,
+				2C5BBF8D213FCE7700A1A6D0 /* Modules */,
+				2C5BBF89213FCCE600A1A6D0 /* ThirdLib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2C5BBF87213FCCB700A1A6D0 /* app */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		2C5BBF88213FCCC000A1A6D0 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				2C5BBF8A213FCD7C00A1A6D0 /* utility */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		2C5BBF89213FCCE600A1A6D0 /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		2C5BBF8A213FCD7C00A1A6D0 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				2C5BBF8C213FCD9600A1A6D0 /* threading */,
+				2C5BBF8B213FCD8E00A1A6D0 /* connectivity */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		2C5BBF8B213FCD8E00A1A6D0 /* connectivity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = connectivity;
+			sourceTree = "<group>";
+		};
+		2C5BBF8C213FCD9600A1A6D0 /* threading */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = threading;
+			sourceTree = "<group>";
+		};
+		2C5BBF8D213FCE7700A1A6D0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,10 +477,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CT53GSRHXS;
 				INFOPLIST_FILE = CKYSTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ckys..CKYSTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ckc.CKYSPlatform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -420,10 +493,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CT53GSRHXS;
 				INFOPLIST_FILE = CKYSTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ckys..CKYSTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ckc.CKYSPlatform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
