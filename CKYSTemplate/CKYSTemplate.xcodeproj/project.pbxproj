@@ -13,6 +13,7 @@
 		2C1A9F2720EE043E00E21FEA /* CKYSTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F2620EE043E00E21FEA /* CKYSTemplateTests.m */; };
 		2C1A9F3220EE043E00E21FEA /* CKYSTemplateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F3120EE043E00E21FEA /* CKYSTemplateUITests.m */; };
 		2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */; };
+		2C5BBF9F213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF9D213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m */; };
 		2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4AE02213CB7F400E43798 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		2C5BBF8F213FD0F000A1A6D0 /* CKAppSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAppSystemInfo.h; sourceTree = "<group>"; };
 		2C5BBF95213FD11500A1A6D0 /* CKYSScreenConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSScreenConst.h; sourceTree = "<group>"; };
 		2C5BBF96213FD11500A1A6D0 /* CKYSRequestServiceResultToastConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSRequestServiceResultToastConst.h; sourceTree = "<group>"; };
+		2C5BBF9D213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+ANSyncRequset.m"; sourceTree = "<group>"; };
+		2C5BBF9E213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+ANSyncRequset.h"; sourceTree = "<group>"; };
 		2CA4AE02213CB7F400E43798 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +182,11 @@
 		2C5BBF8A213FCD7C00A1A6D0 /* utility */ = {
 			isa = PBXGroup;
 			children = (
+				2C5BBFA0213FD35000A1A6D0 /* file */,
+				2C5BBF9C213FD29300A1A6D0 /* NSUserDefault */,
+				2C5BBF9B213FD28E00A1A6D0 /* NSDate */,
+				2C5BBF9A213FD24C00A1A6D0 /* network */,
+				2C5BBF99213FD23B00A1A6D0 /* notification */,
 				2C5BBF8C213FCD9600A1A6D0 /* threading */,
 				2C5BBF8B213FCD8E00A1A6D0 /* connectivity */,
 			);
@@ -213,6 +221,43 @@
 				2C5BBF96213FD11500A1A6D0 /* CKYSRequestServiceResultToastConst.h */,
 			);
 			path = const;
+			sourceTree = "<group>";
+		};
+		2C5BBF99213FD23B00A1A6D0 /* notification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = notification;
+			sourceTree = "<group>";
+		};
+		2C5BBF9A213FD24C00A1A6D0 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				2C5BBF9E213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.h */,
+				2C5BBF9D213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		2C5BBF9B213FD28E00A1A6D0 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		2C5BBF9C213FD29300A1A6D0 /* NSUserDefault */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSUserDefault;
+			sourceTree = "<group>";
+		};
+		2C5BBFA0213FD35000A1A6D0 /* file */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = file;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */,
+				2C5BBF9F213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m in Sources */,
 				2C1A9F1220EE043E00E21FEA /* ViewController.m in Sources */,
 				2C1A9F1D20EE043E00E21FEA /* main.m in Sources */,
 				2C1A9F0F20EE043E00E21FEA /* AppDelegate.m in Sources */,
