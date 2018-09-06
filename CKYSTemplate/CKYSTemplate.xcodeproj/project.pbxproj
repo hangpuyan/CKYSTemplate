@@ -24,6 +24,7 @@
 		2C498CF82140D6160007DCBF /* CKYSPalceHolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CF42140D6160007DCBF /* CKYSPalceHolderView.m */; };
 		2C498CF92140D6160007DCBF /* CKYSDataEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CF62140D6160007DCBF /* CKYSDataEmptyView.m */; };
 		2C498D032140D9380007DCBF /* CKFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D022140D9380007DCBF /* CKFileUtils.m */; };
+		2C498D062140DB4E0007DCBF /* CKUserDefaultCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D052140DB4D0007DCBF /* CKUserDefaultCenter.m */; };
 		2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */; };
 		2C5BBF9F213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF9D213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m */; };
 		2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4AE02213CB7F400E43798 /* Images.xcassets */; };
@@ -90,6 +91,8 @@
 		2C498CF62140D6160007DCBF /* CKYSDataEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKYSDataEmptyView.m; sourceTree = "<group>"; };
 		2C498D012140D9380007DCBF /* CKFileUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKFileUtils.h; sourceTree = "<group>"; };
 		2C498D022140D9380007DCBF /* CKFileUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKFileUtils.m; sourceTree = "<group>"; };
+		2C498D042140DB4D0007DCBF /* CKUserDefaultCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKUserDefaultCenter.h; sourceTree = "<group>"; };
+		2C498D052140DB4D0007DCBF /* CKUserDefaultCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKUserDefaultCenter.m; sourceTree = "<group>"; };
 		2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAppSystemInfo.m; sourceTree = "<group>"; };
 		2C5BBF8F213FD0F000A1A6D0 /* CKAppSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAppSystemInfo.h; sourceTree = "<group>"; };
 		2C5BBF95213FD11500A1A6D0 /* CKYSScreenConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSScreenConst.h; sourceTree = "<group>"; };
@@ -383,6 +386,8 @@
 		2C5BBF9C213FD29300A1A6D0 /* NSUserDefault */ = {
 			isa = PBXGroup;
 			children = (
+				2C498D042140DB4D0007DCBF /* CKUserDefaultCenter.h */,
+				2C498D052140DB4D0007DCBF /* CKUserDefaultCenter.m */,
 			);
 			path = NSUserDefault;
 			sourceTree = "<group>";
@@ -534,6 +539,7 @@
 				2C5BBF9F213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m in Sources */,
 				2C498CF72140D6160007DCBF /* UIViewController+NoticeView.m in Sources */,
 				2C498CB82140CD410007DCBF /* CKYSSearchBar.m in Sources */,
+				2C498D062140DB4E0007DCBF /* CKUserDefaultCenter.m in Sources */,
 				2C1A9F1220EE043E00E21FEA /* ViewController.m in Sources */,
 				2C498C9F2140CC970007DCBF /* UIViewController+NoticeView.m in Sources */,
 				2C498D032140D9380007DCBF /* CKFileUtils.m in Sources */,
