@@ -20,9 +20,9 @@
 		2C498CA42140CC970007DCBF /* UIViewController+SearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C9C2140CC970007DCBF /* UIViewController+SearchItem.m */; };
 		2C498CB82140CD410007DCBF /* CKYSSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CB52140CD400007DCBF /* CKYSSearchBar.m */; };
 		2C498CB92140CD410007DCBF /* CKYSBCSearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CB62140CD400007DCBF /* CKYSBCSearchItem.m */; };
-		2C498CEA2140CEF90007DCBF /* CKYSPalceHolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CE42140CEF80007DCBF /* CKYSPalceHolderView.m */; };
-		2C498CEB2140CEF90007DCBF /* CKYSDataEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CE62140CEF80007DCBF /* CKYSDataEmptyView.m */; };
-		2C498CEC2140CEF90007DCBF /* UIViewController+NoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CE92140CEF80007DCBF /* UIViewController+NoticeView.m */; };
+		2C498CF72140D6160007DCBF /* UIViewController+NoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CF12140D6160007DCBF /* UIViewController+NoticeView.m */; };
+		2C498CF82140D6160007DCBF /* CKYSPalceHolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CF42140D6160007DCBF /* CKYSPalceHolderView.m */; };
+		2C498CF92140D6160007DCBF /* CKYSDataEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CF62140D6160007DCBF /* CKYSDataEmptyView.m */; };
 		2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */; };
 		2C5BBF9F213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF9D213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m */; };
 		2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4AE02213CB7F400E43798 /* Images.xcassets */; };
@@ -81,12 +81,12 @@
 		2C498CE12140CEC00007DCBF /* CKYSNetTipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYSNetTipView.h; sourceTree = "<group>"; };
 		2C498CE22140CEC00007DCBF /* NSObject+NetworkErrorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NetworkErrorView.h"; sourceTree = "<group>"; };
 		2C498CE32140CEC00007DCBF /* CKYSNetworkErrorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYSNetworkErrorView.m; sourceTree = "<group>"; };
-		2C498CE42140CEF80007DCBF /* CKYSPalceHolderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKYSPalceHolderView.m; path = CKYSTemplate/Classes/framework/utility/category/DataEmptyView/CKYSPalceHolderView.m; sourceTree = SOURCE_ROOT; };
-		2C498CE52140CEF80007DCBF /* UIViewController+NoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+NoticeView.h"; path = "CKYSTemplate/Classes/framework/utility/category/DataEmptyView/UIViewController+NoticeView.h"; sourceTree = SOURCE_ROOT; };
-		2C498CE62140CEF80007DCBF /* CKYSDataEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKYSDataEmptyView.m; path = CKYSTemplate/Classes/framework/utility/category/DataEmptyView/CKYSDataEmptyView.m; sourceTree = SOURCE_ROOT; };
-		2C498CE72140CEF80007DCBF /* CKYSDataEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKYSDataEmptyView.h; path = CKYSTemplate/Classes/framework/utility/category/DataEmptyView/CKYSDataEmptyView.h; sourceTree = SOURCE_ROOT; };
-		2C498CE82140CEF80007DCBF /* CKYSPalceHolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKYSPalceHolderView.h; path = CKYSTemplate/Classes/framework/utility/category/DataEmptyView/CKYSPalceHolderView.h; sourceTree = SOURCE_ROOT; };
-		2C498CE92140CEF80007DCBF /* UIViewController+NoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+NoticeView.m"; path = "CKYSTemplate/Classes/framework/utility/category/DataEmptyView/UIViewController+NoticeView.m"; sourceTree = SOURCE_ROOT; };
+		2C498CF12140D6160007DCBF /* UIViewController+NoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NoticeView.m"; sourceTree = "<group>"; };
+		2C498CF22140D6160007DCBF /* CKYSPalceHolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSPalceHolderView.h; sourceTree = "<group>"; };
+		2C498CF32140D6160007DCBF /* CKYSDataEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSDataEmptyView.h; sourceTree = "<group>"; };
+		2C498CF42140D6160007DCBF /* CKYSPalceHolderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKYSPalceHolderView.m; sourceTree = "<group>"; };
+		2C498CF52140D6160007DCBF /* UIViewController+NoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NoticeView.h"; sourceTree = "<group>"; };
+		2C498CF62140D6160007DCBF /* CKYSDataEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKYSDataEmptyView.m; sourceTree = "<group>"; };
 		2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAppSystemInfo.m; sourceTree = "<group>"; };
 		2C5BBF8F213FD0F000A1A6D0 /* CKAppSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAppSystemInfo.h; sourceTree = "<group>"; };
 		2C5BBF95213FD11500A1A6D0 /* CKYSScreenConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSScreenConst.h; sourceTree = "<group>"; };
@@ -198,26 +198,13 @@
 		2C498CC62140CEA30007DCBF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2C498CF02140D6160007DCBF /* DataEmptyView */,
 				2C498CEE2140CF2B0007DCBF /* Toast */,
 				2C498CED2140CF0C0007DCBF /* LoadingView */,
 				2C498CDD2140CEC00007DCBF /* NetTipView */,
-				2C498CC72140CEAB0007DCBF /* DataEmptyView */,
 				2C498CB32140CD400007DCBF /* SearchItem */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		2C498CC72140CEAB0007DCBF /* DataEmptyView */ = {
-			isa = PBXGroup;
-			children = (
-				2C498CE72140CEF80007DCBF /* CKYSDataEmptyView.h */,
-				2C498CE62140CEF80007DCBF /* CKYSDataEmptyView.m */,
-				2C498CE82140CEF80007DCBF /* CKYSPalceHolderView.h */,
-				2C498CE42140CEF80007DCBF /* CKYSPalceHolderView.m */,
-				2C498CE52140CEF80007DCBF /* UIViewController+NoticeView.h */,
-				2C498CE92140CEF80007DCBF /* UIViewController+NoticeView.m */,
-			);
-			path = DataEmptyView;
 			sourceTree = "<group>";
 		};
 		2C498CDD2140CEC00007DCBF /* NetTipView */ = {
@@ -256,6 +243,19 @@
 			children = (
 			);
 			path = NS;
+			sourceTree = "<group>";
+		};
+		2C498CF02140D6160007DCBF /* DataEmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				2C498CF12140D6160007DCBF /* UIViewController+NoticeView.m */,
+				2C498CF22140D6160007DCBF /* CKYSPalceHolderView.h */,
+				2C498CF32140D6160007DCBF /* CKYSDataEmptyView.h */,
+				2C498CF42140D6160007DCBF /* CKYSPalceHolderView.m */,
+				2C498CF52140D6160007DCBF /* UIViewController+NoticeView.h */,
+				2C498CF62140D6160007DCBF /* CKYSDataEmptyView.m */,
+			);
+			path = DataEmptyView;
 			sourceTree = "<group>";
 		};
 		2C5BBF85213FCC8700A1A6D0 /* AppDelegate */ = {
@@ -522,21 +522,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C498CEA2140CEF90007DCBF /* CKYSPalceHolderView.m in Sources */,
 				2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */,
 				2C498CB92140CD410007DCBF /* CKYSBCSearchItem.m in Sources */,
 				2C498CA42140CC970007DCBF /* UIViewController+SearchItem.m in Sources */,
 				2C498C902140C69C0007DCBF /* CKDemoNotificationHelper.m in Sources */,
 				2C5BBF9F213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m in Sources */,
+				2C498CF72140D6160007DCBF /* UIViewController+NoticeView.m in Sources */,
 				2C498CB82140CD410007DCBF /* CKYSSearchBar.m in Sources */,
 				2C1A9F1220EE043E00E21FEA /* ViewController.m in Sources */,
 				2C498C9F2140CC970007DCBF /* UIViewController+NoticeView.m in Sources */,
 				2C498C8A2140C4B70007DCBF /* CKNotificationPostCenter.m in Sources */,
+				2C498CF82140D6160007DCBF /* CKYSPalceHolderView.m in Sources */,
 				2C498CA12140CC970007DCBF /* UIViewController+LoadingView.m in Sources */,
+				2C498CF92140D6160007DCBF /* CKYSDataEmptyView.m in Sources */,
 				2C1A9F1D20EE043E00E21FEA /* main.m in Sources */,
 				2C1A9F0F20EE043E00E21FEA /* AppDelegate.m in Sources */,
-				2C498CEC2140CEF90007DCBF /* UIViewController+NoticeView.m in Sources */,
-				2C498CEB2140CEF90007DCBF /* CKYSDataEmptyView.m in Sources */,
 				2C498C8D2140C54C0007DCBF /* CKNotificationObserverCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
