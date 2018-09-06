@@ -28,6 +28,7 @@
 		2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */; };
 		2C5BBF9F213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF9D213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m */; };
 		2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4AE02213CB7F400E43798 /* Images.xcassets */; };
+		F1C77E22D9CF71157BA06877 /* libPods-CKYSTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C696596B505724BD7A92B1A4 /* libPods-CKYSTemplate.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DEFF5472AF0AAB9562683FF /* Pods-CKYSTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKYSTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-CKYSTemplate/Pods-CKYSTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		2C1A9F0A20EE043E00E21FEA /* CKYSTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CKYSTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1A9F0D20EE043E00E21FEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C1A9F0E20EE043E00E21FEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +102,8 @@
 		2C5BBF9D213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+ANSyncRequset.m"; sourceTree = "<group>"; };
 		2C5BBF9E213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+ANSyncRequset.h"; sourceTree = "<group>"; };
 		2CA4AE02213CB7F400E43798 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80FFD0C98890102AA525C8BD /* Pods-CKYSTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKYSTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CKYSTemplate/Pods-CKYSTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		C696596B505724BD7A92B1A4 /* libPods-CKYSTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CKYSTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C77E22D9CF71157BA06877 /* libPods-CKYSTemplate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +132,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		031A00CA332CD75EEDF83BD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C696596B505724BD7A92B1A4 /* libPods-CKYSTemplate.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2C1A9F0120EE043D00E21FEA = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +147,8 @@
 				2C1A9F2520EE043E00E21FEA /* CKYSTemplateTests */,
 				2C1A9F3020EE043E00E21FEA /* CKYSTemplateUITests */,
 				2C1A9F0B20EE043E00E21FEA /* Products */,
+				B79B20B329C3043585AB7EF2 /* Pods */,
+				031A00CA332CD75EEDF83BD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -401,6 +416,15 @@
 			path = file;
 			sourceTree = "<group>";
 		};
+		B79B20B329C3043585AB7EF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80FFD0C98890102AA525C8BD /* Pods-CKYSTemplate.debug.xcconfig */,
+				0DEFF5472AF0AAB9562683FF /* Pods-CKYSTemplate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -408,6 +432,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C1A9F3620EE043E00E21FEA /* Build configuration list for PBXNativeTarget "CKYSTemplate" */;
 			buildPhases = (
+				C26E93B5E4397475D8C8E2AC /* [CP] Check Pods Manifest.lock */,
 				2C1A9F0620EE043E00E21FEA /* Sources */,
 				2C1A9F0720EE043E00E21FEA /* Frameworks */,
 				2C1A9F0820EE043E00E21FEA /* Resources */,
@@ -526,6 +551,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C26E93B5E4397475D8C8E2AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CKYSTemplate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C1A9F0620EE043E00E21FEA /* Sources */ = {
@@ -691,6 +737,7 @@
 		};
 		2C1A9F3720EE043E00E21FEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FFD0C98890102AA525C8BD /* Pods-CKYSTemplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -707,6 +754,7 @@
 		};
 		2C1A9F3820EE043E00E21FEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DEFF5472AF0AAB9562683FF /* Pods-CKYSTemplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
