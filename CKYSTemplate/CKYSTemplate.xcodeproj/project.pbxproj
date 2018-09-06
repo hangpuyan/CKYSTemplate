@@ -12,6 +12,9 @@
 		2C1A9F1D20EE043E00E21FEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F1C20EE043E00E21FEA /* main.m */; };
 		2C1A9F2720EE043E00E21FEA /* CKYSTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F2620EE043E00E21FEA /* CKYSTemplateTests.m */; };
 		2C1A9F3220EE043E00E21FEA /* CKYSTemplateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F3120EE043E00E21FEA /* CKYSTemplateUITests.m */; };
+		2C498C8A2140C4B70007DCBF /* CKNotificationPostCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C892140C4B70007DCBF /* CKNotificationPostCenter.m */; };
+		2C498C8D2140C54C0007DCBF /* CKNotificationObserverCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C8C2140C54C0007DCBF /* CKNotificationObserverCenter.m */; };
+		2C498C902140C69C0007DCBF /* CKDemoNotificationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C8F2140C69C0007DCBF /* CKDemoNotificationHelper.m */; };
 		2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */; };
 		2C5BBF9F213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF9D213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m */; };
 		2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4AE02213CB7F400E43798 /* Images.xcassets */; };
@@ -48,6 +51,12 @@
 		2C1A9F2D20EE043E00E21FEA /* CKYSTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKYSTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1A9F3120EE043E00E21FEA /* CKYSTemplateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYSTemplateUITests.m; sourceTree = "<group>"; };
 		2C1A9F3320EE043E00E21FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C498C882140C4B70007DCBF /* CKNotificationPostCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKNotificationPostCenter.h; sourceTree = "<group>"; };
+		2C498C892140C4B70007DCBF /* CKNotificationPostCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKNotificationPostCenter.m; sourceTree = "<group>"; };
+		2C498C8B2140C54C0007DCBF /* CKNotificationObserverCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKNotificationObserverCenter.h; sourceTree = "<group>"; };
+		2C498C8C2140C54C0007DCBF /* CKNotificationObserverCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKNotificationObserverCenter.m; sourceTree = "<group>"; };
+		2C498C8E2140C69C0007DCBF /* CKDemoNotificationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKDemoNotificationHelper.h; sourceTree = "<group>"; };
+		2C498C8F2140C69C0007DCBF /* CKDemoNotificationHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKDemoNotificationHelper.m; sourceTree = "<group>"; };
 		2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAppSystemInfo.m; sourceTree = "<group>"; };
 		2C5BBF8F213FD0F000A1A6D0 /* CKAppSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAppSystemInfo.h; sourceTree = "<group>"; };
 		2C5BBF95213FD11500A1A6D0 /* CKYSScreenConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSScreenConst.h; sourceTree = "<group>"; };
@@ -226,6 +235,12 @@
 		2C5BBF99213FD23B00A1A6D0 /* notification */ = {
 			isa = PBXGroup;
 			children = (
+				2C498C882140C4B70007DCBF /* CKNotificationPostCenter.h */,
+				2C498C892140C4B70007DCBF /* CKNotificationPostCenter.m */,
+				2C498C8B2140C54C0007DCBF /* CKNotificationObserverCenter.h */,
+				2C498C8C2140C54C0007DCBF /* CKNotificationObserverCenter.m */,
+				2C498C8E2140C69C0007DCBF /* CKDemoNotificationHelper.h */,
+				2C498C8F2140C69C0007DCBF /* CKDemoNotificationHelper.m */,
 			);
 			path = notification;
 			sourceTree = "<group>";
@@ -392,10 +407,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */,
+				2C498C902140C69C0007DCBF /* CKDemoNotificationHelper.m in Sources */,
 				2C5BBF9F213FD32E00A1A6D0 /* NSURLSession+ANSyncRequset.m in Sources */,
 				2C1A9F1220EE043E00E21FEA /* ViewController.m in Sources */,
+				2C498C8A2140C4B70007DCBF /* CKNotificationPostCenter.m in Sources */,
 				2C1A9F1D20EE043E00E21FEA /* main.m in Sources */,
 				2C1A9F0F20EE043E00E21FEA /* AppDelegate.m in Sources */,
+				2C498C8D2140C54C0007DCBF /* CKNotificationObserverCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
