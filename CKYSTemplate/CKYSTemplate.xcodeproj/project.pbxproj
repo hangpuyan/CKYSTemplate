@@ -26,6 +26,7 @@
 		2C498D062140DB4E0007DCBF /* CKUserDefaultCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D052140DB4D0007DCBF /* CKUserDefaultCenter.m */; };
 		2C498D172141003D0007DCBF /* CKNetworkStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D162141003D0007DCBF /* CKNetworkStatusManager.m */; };
 		2C498D1A214100950007DCBF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D19214100950007DCBF /* Reachability.m */; };
+		2C498D28214127250007DCBF /* AppDelegate+RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D27214127250007DCBF /* AppDelegate+RootViewController.m */; };
 		2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */; };
 		2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4AE02213CB7F400E43798 /* Images.xcassets */; };
 		F1C77E22D9CF71157BA06877 /* libPods-CKYSTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C696596B505724BD7A92B1A4 /* libPods-CKYSTemplate.a */; };
@@ -97,6 +98,8 @@
 		2C498D162141003D0007DCBF /* CKNetworkStatusManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKNetworkStatusManager.m; sourceTree = "<group>"; };
 		2C498D18214100950007DCBF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		2C498D19214100950007DCBF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		2C498D26214127250007DCBF /* AppDelegate+RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+RootViewController.h"; sourceTree = "<group>"; };
+		2C498D27214127250007DCBF /* AppDelegate+RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+RootViewController.m"; sourceTree = "<group>"; };
 		2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAppSystemInfo.m; sourceTree = "<group>"; };
 		2C5BBF8F213FD0F000A1A6D0 /* CKAppSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAppSystemInfo.h; sourceTree = "<group>"; };
 		2C5BBF95213FD11500A1A6D0 /* CKYSScreenConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSScreenConst.h; sourceTree = "<group>"; };
@@ -282,6 +285,8 @@
 			children = (
 				2C1A9F0D20EE043E00E21FEA /* AppDelegate.h */,
 				2C1A9F0E20EE043E00E21FEA /* AppDelegate.m */,
+				2C498D26214127250007DCBF /* AppDelegate+RootViewController.h */,
+				2C498D27214127250007DCBF /* AppDelegate+RootViewController.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -327,21 +332,12 @@
 			children = (
 				2C5BBFA0213FD35000A1A6D0 /* file */,
 				2C5BBF9C213FD29300A1A6D0 /* NSUserDefault */,
-				2C5BBF9B213FD28E00A1A6D0 /* NSDate */,
 				2C5BBF9A213FD24C00A1A6D0 /* network */,
 				2C5BBF99213FD23B00A1A6D0 /* notification */,
 				2C5BBF8C213FCD9600A1A6D0 /* threading */,
-				2C5BBF8B213FCD8E00A1A6D0 /* connectivity */,
 				2C498C922140CC970007DCBF /* category */,
 			);
 			path = utility;
-			sourceTree = "<group>";
-		};
-		2C5BBF8B213FCD8E00A1A6D0 /* connectivity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = connectivity;
 			sourceTree = "<group>";
 		};
 		2C5BBF8C213FCD9600A1A6D0 /* threading */ = {
@@ -389,13 +385,6 @@
 				2C498D162141003D0007DCBF /* CKNetworkStatusManager.m */,
 			);
 			path = network;
-			sourceTree = "<group>";
-		};
-		2C5BBF9B213FD28E00A1A6D0 /* NSDate */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NSDate;
 			sourceTree = "<group>";
 		};
 		2C5BBF9C213FD29300A1A6D0 /* NSUserDefault */ = {
@@ -587,6 +576,7 @@
 				2C498D062140DB4E0007DCBF /* CKUserDefaultCenter.m in Sources */,
 				2C1A9F1220EE043E00E21FEA /* ViewController.m in Sources */,
 				2C498D1A214100950007DCBF /* Reachability.m in Sources */,
+				2C498D28214127250007DCBF /* AppDelegate+RootViewController.m in Sources */,
 				2C498C9F2140CC970007DCBF /* UIViewController+NoticeView.m in Sources */,
 				2C498D032140D9380007DCBF /* CKFileUtils.m in Sources */,
 				2C498C8A2140C4B70007DCBF /* CKNotificationPostCenter.m in Sources */,
