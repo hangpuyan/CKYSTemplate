@@ -10,7 +10,7 @@
 
 @interface CKUserDefaultCenter : NSObject
 
-+ (nonnull CKUserDefaultCenter *)userCenter;
++ (nonnull CKUserDefaultCenter *)userDefaultCenter;
 
 - (nullable NSUserDefaults *)systemUserDefaults;
 

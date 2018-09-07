@@ -23,7 +23,7 @@
     return self;
 }
 
-+ (CKUserDefaultCenter *)userCenter {
++ (CKUserDefaultCenter *)userDefaultCenter {
     static CKUserDefaultCenter *center = nil;
     static dispatch_once_t onceToken;
     
