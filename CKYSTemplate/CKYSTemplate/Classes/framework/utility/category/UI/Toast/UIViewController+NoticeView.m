@@ -7,7 +7,7 @@
 
 #import "UIViewController+NoticeView.h"
 #import "objc/runtime.h"
-
+#import <JGProgressHUD.h>
 
 @interface UIViewController ()
 

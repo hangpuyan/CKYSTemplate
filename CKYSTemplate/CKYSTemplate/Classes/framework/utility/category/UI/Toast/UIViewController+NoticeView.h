@@ -8,6 +8,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
+@class JGProgressHUD;
+
 @interface UIViewController (NoticeView)
 
 @property (nonatomic, strong, readonly) JGProgressHUD *viewNetError;

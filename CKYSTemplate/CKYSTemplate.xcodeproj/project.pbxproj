@@ -425,6 +425,7 @@
 				2C1A9F0620EE043E00E21FEA /* Sources */,
 				2C1A9F0720EE043E00E21FEA /* Frameworks */,
 				2C1A9F0820EE043E00E21FEA /* Resources */,
+				2472DD2B2479A215743CBB93 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -542,6 +543,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2472DD2B2479A215743CBB93 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CKYSTemplate/Pods-CKYSTemplate-resources.sh",
+				"${PODS_ROOT}/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUD Resources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JGProgressHUD Resources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CKYSTemplate/Pods-CKYSTemplate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C26E93B5E4397475D8C8E2AC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -7,7 +7,7 @@
 
 #import "UIViewController+NoticeView.h"
 #import "objc/runtime.h"
-
+#import <JGProgressHUD.h>
 
 @interface UIViewController ()
 
@@ -48,7 +48,7 @@ static const void *CKYSNoticeViewKey = &CKYSNoticeViewKey;
     if (!self.viewNetError) {
         [self initView];
     }
-    if (IsNilOrNull(title)){
+    if (!title.length || [title isKindOfClass:[NSNull class]]){
         return;
     }
     dispatch_async(dispatch_get_main_queue(), ^{        

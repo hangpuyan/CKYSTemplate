@@ -10,5 +10,8 @@ target 'CKYSTemplate' do
       pod 'UIButtonUnit'
    
       pod 'Bugly'
+      
+      pod 'JGProgressHUD', '~> 1.4’
+
 
 end
