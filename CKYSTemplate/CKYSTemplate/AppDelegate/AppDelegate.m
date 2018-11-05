@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "AppDelegate+RootViewController.h"
+#import "AppDelegate+UI.h"
+#import "AppDelegate+SDK.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self initBugly];
     [self initRootViewController];
     return YES;
 }

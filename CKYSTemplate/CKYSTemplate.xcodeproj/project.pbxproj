@@ -20,6 +20,11 @@
 		2C436FF121906698000D0E54 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FF021906698000D0E54 /* UILabel+Category.m */; };
 		2C436FF4219066AD000D0E54 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FF3219066AD000D0E54 /* UIView+Category.m */; };
 		2C436FF7219066C5000D0E54 /* UIButton+SetTitleColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FF6219066C5000D0E54 /* UIButton+SetTitleColorImage.m */; };
+		2C43700721906ECB000D0E54 /* AppDelegate+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C43700621906ECB000D0E54 /* AppDelegate+UI.m */; };
+		2C43700A21906ED7000D0E54 /* AppDelegate+SDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C43700921906ED7000D0E54 /* AppDelegate+SDK.m */; };
+		2C43700D21906F66000D0E54 /* CKYSBuglyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C43700C21906F66000D0E54 /* CKYSBuglyHelper.m */; };
+		2C43701421907102000D0E54 /* CKYSSDKInitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C43701321907102000D0E54 /* CKYSSDKInitManager.m */; };
+		2C4370182190726D000D0E54 /* CKYSBaiduMapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4370172190726D000D0E54 /* CKYSBaiduMapHelper.m */; };
 		2C498C8A2140C4B70007DCBF /* CKNotificationPostCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C892140C4B70007DCBF /* CKNotificationPostCenter.m */; };
 		2C498C8D2140C54C0007DCBF /* CKNotificationObserverCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C8C2140C54C0007DCBF /* CKNotificationObserverCenter.m */; };
 		2C498C902140C69C0007DCBF /* CKDemoNotificationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C8F2140C69C0007DCBF /* CKDemoNotificationHelper.m */; };
@@ -34,7 +39,6 @@
 		2C498D062140DB4E0007DCBF /* CKUserDefaultCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D052140DB4D0007DCBF /* CKUserDefaultCenter.m */; };
 		2C498D172141003D0007DCBF /* CKNetworkStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D162141003D0007DCBF /* CKNetworkStatusManager.m */; };
 		2C498D1A214100950007DCBF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D19214100950007DCBF /* Reachability.m */; };
-		2C498D28214127250007DCBF /* AppDelegate+RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D27214127250007DCBF /* AppDelegate+RootViewController.m */; };
 		2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */; };
 		2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4AE02213CB7F400E43798 /* Images.xcassets */; };
 		F1C77E22D9CF71157BA06877 /* libPods-CKYSTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C696596B505724BD7A92B1A4 /* libPods-CKYSTemplate.a */; };
@@ -88,6 +92,16 @@
 		2C436FF3219066AD000D0E54 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		2C436FF5219066C4000D0E54 /* UIButton+SetTitleColorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SetTitleColorImage.h"; sourceTree = "<group>"; };
 		2C436FF6219066C5000D0E54 /* UIButton+SetTitleColorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SetTitleColorImage.m"; sourceTree = "<group>"; };
+		2C43700521906ECB000D0E54 /* AppDelegate+UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UI.h"; sourceTree = "<group>"; };
+		2C43700621906ECB000D0E54 /* AppDelegate+UI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UI.m"; sourceTree = "<group>"; };
+		2C43700821906ED7000D0E54 /* AppDelegate+SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SDK.h"; sourceTree = "<group>"; };
+		2C43700921906ED7000D0E54 /* AppDelegate+SDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+SDK.m"; sourceTree = "<group>"; };
+		2C43700B21906F66000D0E54 /* CKYSBuglyHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYSBuglyHelper.h; sourceTree = "<group>"; };
+		2C43700C21906F66000D0E54 /* CKYSBuglyHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYSBuglyHelper.m; sourceTree = "<group>"; };
+		2C43701221907102000D0E54 /* CKYSSDKInitManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYSSDKInitManager.h; sourceTree = "<group>"; };
+		2C43701321907102000D0E54 /* CKYSSDKInitManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYSSDKInitManager.m; sourceTree = "<group>"; };
+		2C4370162190726D000D0E54 /* CKYSBaiduMapHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYSBaiduMapHelper.h; sourceTree = "<group>"; };
+		2C4370172190726D000D0E54 /* CKYSBaiduMapHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYSBaiduMapHelper.m; sourceTree = "<group>"; };
 		2C498C882140C4B70007DCBF /* CKNotificationPostCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKNotificationPostCenter.h; sourceTree = "<group>"; };
 		2C498C892140C4B70007DCBF /* CKNotificationPostCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKNotificationPostCenter.m; sourceTree = "<group>"; };
 		2C498C8B2140C54C0007DCBF /* CKNotificationObserverCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKNotificationObserverCenter.h; sourceTree = "<group>"; };
@@ -122,8 +136,6 @@
 		2C498D162141003D0007DCBF /* CKNetworkStatusManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKNetworkStatusManager.m; sourceTree = "<group>"; };
 		2C498D18214100950007DCBF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		2C498D19214100950007DCBF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		2C498D26214127250007DCBF /* AppDelegate+RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+RootViewController.h"; sourceTree = "<group>"; };
-		2C498D27214127250007DCBF /* AppDelegate+RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+RootViewController.m"; sourceTree = "<group>"; };
 		2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAppSystemInfo.m; sourceTree = "<group>"; };
 		2C5BBF8F213FD0F000A1A6D0 /* CKAppSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAppSystemInfo.h; sourceTree = "<group>"; };
 		2C5BBF95213FD11500A1A6D0 /* CKYSScreenConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSScreenConst.h; sourceTree = "<group>"; };
@@ -266,8 +278,10 @@
 		2C436FFC21906971000D0E54 /* Category(使用category抽离appDelegate中冗余代码,保证appDelegate中代码不超过300行) */ = {
 			isa = PBXGroup;
 			children = (
-				2C498D26214127250007DCBF /* AppDelegate+RootViewController.h */,
-				2C498D27214127250007DCBF /* AppDelegate+RootViewController.m */,
+				2C43700521906ECB000D0E54 /* AppDelegate+UI.h */,
+				2C43700621906ECB000D0E54 /* AppDelegate+UI.m */,
+				2C43700821906ED7000D0E54 /* AppDelegate+SDK.h */,
+				2C43700921906ED7000D0E54 /* AppDelegate+SDK.m */,
 			);
 			path = "Category(使用category抽离appDelegate中冗余代码,保证appDelegate中代码不超过300行)";
 			sourceTree = "<group>";
@@ -298,6 +312,50 @@
 			children = (
 			);
 			path = "framework_A(比如A是某业务依赖的数据层)";
+			sourceTree = "<group>";
+		};
+		2C43700121906D8C000D0E54 /* SDKHelper(此处存在一个HelperDir目的和Category一样的都是为了对appDelegate代码进行抽离,不同的是此处是SDK初始化相关) */ = {
+			isa = PBXGroup;
+			children = (
+				2C43700E2190703E000D0E54 /* SDKInitManager(SDK相关初始化也可以创建一个Manager进行统一初始化,但仅限于在AppDelegate中,如果其他地方使用单独的SDK建议使用Helper类去在其他地方做操作,减少无关依赖) */,
+				2C43700321906DF0000D0E54 /* Bugly(以初始化Bugly为例) */,
+				2C43700421906DF8000D0E54 /* BaiduMap(存在于AppDelegate和某业务模块中,为了防止SDK变更导致无关类重新编译,建议初始化和start|stopLocation分别引用于相关位置) */,
+			);
+			path = "SDKHelper(此处存在一个HelperDir目的和Category一样的都是为了对appDelegate代码进行抽离,不同的是此处是SDK初始化相关)";
+			sourceTree = "<group>";
+		};
+		2C43700321906DF0000D0E54 /* Bugly(以初始化Bugly为例) */ = {
+			isa = PBXGroup;
+			children = (
+				2C43700B21906F66000D0E54 /* CKYSBuglyHelper.h */,
+				2C43700C21906F66000D0E54 /* CKYSBuglyHelper.m */,
+			);
+			path = "Bugly(以初始化Bugly为例)";
+			sourceTree = "<group>";
+		};
+		2C43700421906DF8000D0E54 /* BaiduMap(存在于AppDelegate和某业务模块中,为了防止SDK变更导致无关类重新编译,建议初始化和start|stopLocation分别引用于相关位置) */ = {
+			isa = PBXGroup;
+			children = (
+				2C4370162190726D000D0E54 /* CKYSBaiduMapHelper.h */,
+				2C4370172190726D000D0E54 /* CKYSBaiduMapHelper.m */,
+			);
+			path = "BaiduMap(存在于AppDelegate和某业务模块中,为了防止SDK变更导致无关类重新编译,建议初始化和start|stopLocation分别引用于相关位置)";
+			sourceTree = "<group>";
+		};
+		2C43700E2190703E000D0E54 /* SDKInitManager(SDK相关初始化也可以创建一个Manager进行统一初始化,但仅限于在AppDelegate中,如果其他地方使用单独的SDK建议使用Helper类去在其他地方做操作,减少无关依赖) */ = {
+			isa = PBXGroup;
+			children = (
+				2C43701221907102000D0E54 /* CKYSSDKInitManager.h */,
+				2C43701321907102000D0E54 /* CKYSSDKInitManager.m */,
+			);
+			path = "SDKInitManager(SDK相关初始化也可以创建一个Manager进行统一初始化,但仅限于在AppDelegate中,如果其他地方使用单独的SDK建议使用Helper类去在其他地方做操作,减少无关依赖)";
+			sourceTree = "<group>";
+		};
+		2C437015219071F6000D0E54 /* framework_B(有多少个Module就会对应有多少个framework_) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "framework_B(有多少个Module就会对应有多少个framework_)";
 			sourceTree = "<group>";
 		};
 		2C498C922140CC970007DCBF /* category */ = {
@@ -395,6 +453,7 @@
 				2C1A9F0D20EE043E00E21FEA /* AppDelegate.h */,
 				2C1A9F0E20EE043E00E21FEA /* AppDelegate.m */,
 				2C436FFC21906971000D0E54 /* Category(使用category抽离appDelegate中冗余代码,保证appDelegate中代码不超过300行) */,
+				2C43700121906D8C000D0E54 /* SDKHelper(此处存在一个HelperDir目的和Category一样的都是为了对appDelegate代码进行抽离,不同的是此处是SDK初始化相关) */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -402,7 +461,7 @@
 		2C5BBF86213FCC9A00A1A6D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2C5BBF87213FCCB700A1A6D0 /* app */,
+				2C5BBF87213FCCB700A1A6D0 /* app(独立于framework和业务以及UI层,此类仅获取app信息版本号...原因在于此类所有app都是同一套逻辑和获取方式) */,
 				2C5BBF88213FCCC000A1A6D0 /* framework */,
 				2C5BBF8D213FCE7700A1A6D0 /* Modules(业务模块划分) */,
 				2C5BBF89213FCCE600A1A6D0 /* ThirdLib */,
@@ -410,13 +469,13 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		2C5BBF87213FCCB700A1A6D0 /* app */ = {
+		2C5BBF87213FCCB700A1A6D0 /* app(独立于framework和业务以及UI层,此类仅获取app信息版本号...原因在于此类所有app都是同一套逻辑和获取方式) */ = {
 			isa = PBXGroup;
 			children = (
 				2C5BBF8F213FD0F000A1A6D0 /* CKAppSystemInfo.h */,
 				2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */,
 			);
-			path = app;
+			path = "app(独立于framework和业务以及UI层,此类仅获取app信息版本号...原因在于此类所有app都是同一套逻辑和获取方式)";
 			sourceTree = "<group>";
 		};
 		2C5BBF88213FCCC000A1A6D0 /* framework */ = {
@@ -425,6 +484,7 @@
 				2C5BBF91213FD11500A1A6D0 /* const(使用.h文件对常量进行分类管理,保证每一种类型的常量存在同一个.h文件中) */,
 				2C5BBF8A213FCD7C00A1A6D0 /* utility(项目中基础工具类) */,
 				2C43700021906C5C000D0E54 /* framework_A(比如A是某业务依赖的数据层) */,
+				2C437015219071F6000D0E54 /* framework_B(有多少个Module就会对应有多少个framework_) */,
 			);
 			path = framework;
 			sourceTree = "<group>";
@@ -709,14 +769,17 @@
 				2C498CF72140D6160007DCBF /* UIViewController+NoticeView.m in Sources */,
 				2C498D172141003D0007DCBF /* CKNetworkStatusManager.m in Sources */,
 				2C498D062140DB4E0007DCBF /* CKUserDefaultCenter.m in Sources */,
+				2C43700D21906F66000D0E54 /* CKYSBuglyHelper.m in Sources */,
 				2C436FEC21906683000D0E54 /* UIViewController+PushViewController.m in Sources */,
+				2C4370182190726D000D0E54 /* CKYSBaiduMapHelper.m in Sources */,
 				2C1A9F1220EE043E00E21FEA /* ViewController.m in Sources */,
 				2C436FEB21906683000D0E54 /* UIViewController+PopViewController.m in Sources */,
 				2C498D1A214100950007DCBF /* Reachability.m in Sources */,
-				2C498D28214127250007DCBF /* AppDelegate+RootViewController.m in Sources */,
+				2C43700721906ECB000D0E54 /* AppDelegate+UI.m in Sources */,
 				2C498C9F2140CC970007DCBF /* UIViewController+NoticeView.m in Sources */,
 				2C436FE22190651D000D0E54 /* NSNilObject.m in Sources */,
 				2C498D032140D9380007DCBF /* CKFileUtils.m in Sources */,
+				2C43701421907102000D0E54 /* CKYSSDKInitManager.m in Sources */,
 				2C498C8A2140C4B70007DCBF /* CKNotificationPostCenter.m in Sources */,
 				2C498CF82140D6160007DCBF /* CKYSPalceHolderView.m in Sources */,
 				2C436FEE21906683000D0E54 /* UIViewController+NavigationBarStatusBar.m in Sources */,
@@ -725,6 +788,7 @@
 				2C1A9F1D20EE043E00E21FEA /* main.m in Sources */,
 				2C1A9F0F20EE043E00E21FEA /* AppDelegate.m in Sources */,
 				2C498C8D2140C54C0007DCBF /* CKNotificationObserverCenter.m in Sources */,
+				2C43700A21906ED7000D0E54 /* AppDelegate+SDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
