@@ -10,7 +10,7 @@
 
 @interface UIViewController (NoticeView)
 
-@property (nonatomic, strong, readonly) JGProgressHUD *viewNetError;
+@property (nonatomic, strong, readonly) UIView *viewNetError;
 
 - (void)showNoticeView:(NSString *)title;
 

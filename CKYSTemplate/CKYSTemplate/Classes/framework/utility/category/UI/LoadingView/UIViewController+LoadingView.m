@@ -11,7 +11,7 @@
 
 @interface UIViewController ()
 
-@property (nonatomic, strong) CKC_CustomProgressView *loadingView;
+@property (nonatomic, strong) UIView *loadingView;
 
 @end
 
@@ -19,24 +19,24 @@
 
 static const void *CKYSLoadingViewKey = &CKYSLoadingViewKey;
 
-- (void)setLoadingView:(CKC_CustomProgressView *)loadingView {
+- (void)setLoadingView:(UIView *)loadingView {
     objc_setAssociatedObject(self, CKYSLoadingViewKey, loadingView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (CKC_CustomProgressView *)loadingView {
+- (UIView *)loadingView {
    return objc_getAssociatedObject(self, CKYSLoadingViewKey);
 }
 
 - (void)startLoading {
     if (!self.loadingView) {
-        self.loadingView = [[CKC_CustomProgressView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        self.loadingView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     }
     [[UIApplication sharedApplication].keyWindow addSubview:self.loadingView];
-    [self.loadingView startAnimation];
+//    [self.loadingView startAnimation];
 }
 
 - (void)stopLoading {
-    [self.loadingView stopAnimation];
+//    [self.loadingView stopAnimation];
 }
 
 @end

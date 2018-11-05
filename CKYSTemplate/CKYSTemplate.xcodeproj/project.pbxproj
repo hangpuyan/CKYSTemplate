@@ -12,6 +12,14 @@
 		2C1A9F1D20EE043E00E21FEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F1C20EE043E00E21FEA /* main.m */; };
 		2C1A9F2720EE043E00E21FEA /* CKYSTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F2620EE043E00E21FEA /* CKYSTemplateTests.m */; };
 		2C1A9F3220EE043E00E21FEA /* CKYSTemplateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A9F3120EE043E00E21FEA /* CKYSTemplateUITests.m */; };
+		2C436FE22190651D000D0E54 /* NSNilObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FE12190651D000D0E54 /* NSNilObject.m */; };
+		2C436FEB21906683000D0E54 /* UIViewController+PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FE321906681000D0E54 /* UIViewController+PopViewController.m */; };
+		2C436FEC21906683000D0E54 /* UIViewController+PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FE621906682000D0E54 /* UIViewController+PushViewController.m */; };
+		2C436FED21906683000D0E54 /* UIViewController+NavigationBarHidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FE821906682000D0E54 /* UIViewController+NavigationBarHidden.m */; };
+		2C436FEE21906683000D0E54 /* UIViewController+NavigationBarStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FEA21906683000D0E54 /* UIViewController+NavigationBarStatusBar.m */; };
+		2C436FF121906698000D0E54 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FF021906698000D0E54 /* UILabel+Category.m */; };
+		2C436FF4219066AD000D0E54 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FF3219066AD000D0E54 /* UIView+Category.m */; };
+		2C436FF7219066C5000D0E54 /* UIButton+SetTitleColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FF6219066C5000D0E54 /* UIButton+SetTitleColorImage.m */; };
 		2C498C8A2140C4B70007DCBF /* CKNotificationPostCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C892140C4B70007DCBF /* CKNotificationPostCenter.m */; };
 		2C498C8D2140C54C0007DCBF /* CKNotificationObserverCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C8C2140C54C0007DCBF /* CKNotificationObserverCenter.m */; };
 		2C498C902140C69C0007DCBF /* CKDemoNotificationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C8F2140C69C0007DCBF /* CKDemoNotificationHelper.m */; };
@@ -64,6 +72,22 @@
 		2C1A9F2D20EE043E00E21FEA /* CKYSTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKYSTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1A9F3120EE043E00E21FEA /* CKYSTemplateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYSTemplateUITests.m; sourceTree = "<group>"; };
 		2C1A9F3320EE043E00E21FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C436FE02190651D000D0E54 /* NSNilObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSNilObject.h; sourceTree = "<group>"; };
+		2C436FE12190651D000D0E54 /* NSNilObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSNilObject.m; sourceTree = "<group>"; };
+		2C436FE321906681000D0E54 /* UIViewController+PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PopViewController.m"; sourceTree = "<group>"; };
+		2C436FE421906682000D0E54 /* UIViewController+PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PushViewController.h"; sourceTree = "<group>"; };
+		2C436FE521906682000D0E54 /* UIViewController+NavigationBarHidden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBarHidden.h"; sourceTree = "<group>"; };
+		2C436FE621906682000D0E54 /* UIViewController+PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PushViewController.m"; sourceTree = "<group>"; };
+		2C436FE721906682000D0E54 /* UIViewController+NavigationBarStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBarStatusBar.h"; sourceTree = "<group>"; };
+		2C436FE821906682000D0E54 /* UIViewController+NavigationBarHidden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBarHidden.m"; sourceTree = "<group>"; };
+		2C436FE921906683000D0E54 /* UIViewController+PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PopViewController.h"; sourceTree = "<group>"; };
+		2C436FEA21906683000D0E54 /* UIViewController+NavigationBarStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBarStatusBar.m"; sourceTree = "<group>"; };
+		2C436FEF21906698000D0E54 /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
+		2C436FF021906698000D0E54 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
+		2C436FF2219066AD000D0E54 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		2C436FF3219066AD000D0E54 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		2C436FF5219066C4000D0E54 /* UIButton+SetTitleColorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SetTitleColorImage.h"; sourceTree = "<group>"; };
+		2C436FF6219066C5000D0E54 /* UIButton+SetTitleColorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SetTitleColorImage.m"; sourceTree = "<group>"; };
 		2C498C882140C4B70007DCBF /* CKNotificationPostCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKNotificationPostCenter.h; sourceTree = "<group>"; };
 		2C498C892140C4B70007DCBF /* CKNotificationPostCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKNotificationPostCenter.m; sourceTree = "<group>"; };
 		2C498C8B2140C54C0007DCBF /* CKNotificationObserverCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKNotificationObserverCenter.h; sourceTree = "<group>"; };
@@ -197,6 +221,48 @@
 			path = CKYSTemplateUITests;
 			sourceTree = "<group>";
 		};
+		2C436FF8219066CE000D0E54 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				2C436FF2219066AD000D0E54 /* UIView+Category.h */,
+				2C436FF3219066AD000D0E54 /* UIView+Category.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		2C436FF9219066DB000D0E54 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				2C436FF5219066C4000D0E54 /* UIButton+SetTitleColorImage.h */,
+				2C436FF6219066C5000D0E54 /* UIButton+SetTitleColorImage.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		2C436FFA219066E7000D0E54 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				2C436FEF21906698000D0E54 /* UILabel+Category.h */,
+				2C436FF021906698000D0E54 /* UILabel+Category.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		2C436FFB219066F8000D0E54 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C436FE521906682000D0E54 /* UIViewController+NavigationBarHidden.h */,
+				2C436FE821906682000D0E54 /* UIViewController+NavigationBarHidden.m */,
+				2C436FE721906682000D0E54 /* UIViewController+NavigationBarStatusBar.h */,
+				2C436FEA21906683000D0E54 /* UIViewController+NavigationBarStatusBar.m */,
+				2C436FE921906683000D0E54 /* UIViewController+PopViewController.h */,
+				2C436FE321906681000D0E54 /* UIViewController+PopViewController.m */,
+				2C436FE421906682000D0E54 /* UIViewController+PushViewController.h */,
+				2C436FE621906682000D0E54 /* UIViewController+PushViewController.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		2C498C922140CC970007DCBF /* category */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +286,10 @@
 		2C498CC62140CEA30007DCBF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2C436FFB219066F8000D0E54 /* UIViewController */,
+				2C436FFA219066E7000D0E54 /* UILabel */,
+				2C436FF9219066DB000D0E54 /* UIButton */,
+				2C436FF8219066CE000D0E54 /* UIView */,
 				2C498CF02140D6160007DCBF /* DataEmptyView */,
 				2C498CEE2140CF2B0007DCBF /* Toast */,
 				2C498CED2140CF0C0007DCBF /* LoadingView */,
@@ -263,6 +333,8 @@
 		2C498CEF2140CF3A0007DCBF /* NS */ = {
 			isa = PBXGroup;
 			children = (
+				2C436FE02190651D000D0E54 /* NSNilObject.h */,
+				2C436FE12190651D000D0E54 /* NSNilObject.m */,
 			);
 			path = NS;
 			sourceTree = "<group>";
@@ -589,17 +661,25 @@
 				2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */,
 				2C498CB92140CD410007DCBF /* CKYSBCSearchItem.m in Sources */,
 				2C498CA42140CC970007DCBF /* UIViewController+SearchItem.m in Sources */,
+				2C436FF121906698000D0E54 /* UILabel+Category.m in Sources */,
+				2C436FF7219066C5000D0E54 /* UIButton+SetTitleColorImage.m in Sources */,
 				2C498C902140C69C0007DCBF /* CKDemoNotificationHelper.m in Sources */,
+				2C436FED21906683000D0E54 /* UIViewController+NavigationBarHidden.m in Sources */,
+				2C436FF4219066AD000D0E54 /* UIView+Category.m in Sources */,
 				2C498CF72140D6160007DCBF /* UIViewController+NoticeView.m in Sources */,
 				2C498D172141003D0007DCBF /* CKNetworkStatusManager.m in Sources */,
 				2C498D062140DB4E0007DCBF /* CKUserDefaultCenter.m in Sources */,
+				2C436FEC21906683000D0E54 /* UIViewController+PushViewController.m in Sources */,
 				2C1A9F1220EE043E00E21FEA /* ViewController.m in Sources */,
+				2C436FEB21906683000D0E54 /* UIViewController+PopViewController.m in Sources */,
 				2C498D1A214100950007DCBF /* Reachability.m in Sources */,
 				2C498D28214127250007DCBF /* AppDelegate+RootViewController.m in Sources */,
 				2C498C9F2140CC970007DCBF /* UIViewController+NoticeView.m in Sources */,
+				2C436FE22190651D000D0E54 /* NSNilObject.m in Sources */,
 				2C498D032140D9380007DCBF /* CKFileUtils.m in Sources */,
 				2C498C8A2140C4B70007DCBF /* CKNotificationPostCenter.m in Sources */,
 				2C498CF82140D6160007DCBF /* CKYSPalceHolderView.m in Sources */,
+				2C436FEE21906683000D0E54 /* UIViewController+NavigationBarStatusBar.m in Sources */,
 				2C498CA12140CC970007DCBF /* UIViewController+LoadingView.m in Sources */,
 				2C498CF92140D6160007DCBF /* CKYSDataEmptyView.m in Sources */,
 				2C1A9F1D20EE043E00E21FEA /* main.m in Sources */,
