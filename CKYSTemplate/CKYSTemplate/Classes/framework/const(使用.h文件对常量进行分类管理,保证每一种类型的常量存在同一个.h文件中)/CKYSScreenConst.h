@@ -6,6 +6,7 @@
 //  Copyright © 2018年 YY. All rights reserved.
 //
 
+/** 设备尺寸相关常量 */
 #ifndef CKYSScreenConst_h
 #define CKYSScreenConst_h
 

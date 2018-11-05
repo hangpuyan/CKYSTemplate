@@ -6,6 +6,7 @@
 //  Copyright © 2018年 ckys. All rights reserved.
 //
 
+/** 网络提示Toast相关常量 */
 #ifndef CKYSRequestServiceResultToastConst_h
 #define CKYSRequestServiceResultToastConst_h
 

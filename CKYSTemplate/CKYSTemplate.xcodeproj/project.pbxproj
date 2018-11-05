@@ -263,6 +263,43 @@
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
+		2C436FFC21906971000D0E54 /* Category(使用category抽离appDelegate中冗余代码,保证appDelegate中代码不超过300行) */ = {
+			isa = PBXGroup;
+			children = (
+				2C498D26214127250007DCBF /* AppDelegate+RootViewController.h */,
+				2C498D27214127250007DCBF /* AppDelegate+RootViewController.m */,
+			);
+			path = "Category(使用category抽离appDelegate中冗余代码,保证appDelegate中代码不超过300行)";
+			sourceTree = "<group>";
+		};
+		2C436FFD21906ABF000D0E54 /* Module_A(此处命名借鉴Casa代码勿喷) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module_A(此处命名借鉴Casa代码勿喷)";
+			sourceTree = "<group>";
+		};
+		2C436FFE21906ACC000D0E54 /* Module_B */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module_B;
+			sourceTree = "<group>";
+		};
+		2C436FFF21906AD2000D0E54 /* Module_C */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module_C;
+			sourceTree = "<group>";
+		};
+		2C43700021906C5C000D0E54 /* framework_A(比如A是某业务依赖的数据层) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "framework_A(比如A是某业务依赖的数据层)";
+			sourceTree = "<group>";
+		};
 		2C498C922140CC970007DCBF /* category */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,8 +394,7 @@
 			children = (
 				2C1A9F0D20EE043E00E21FEA /* AppDelegate.h */,
 				2C1A9F0E20EE043E00E21FEA /* AppDelegate.m */,
-				2C498D26214127250007DCBF /* AppDelegate+RootViewController.h */,
-				2C498D27214127250007DCBF /* AppDelegate+RootViewController.m */,
+				2C436FFC21906971000D0E54 /* Category(使用category抽离appDelegate中冗余代码,保证appDelegate中代码不超过300行) */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -368,7 +404,7 @@
 			children = (
 				2C5BBF87213FCCB700A1A6D0 /* app */,
 				2C5BBF88213FCCC000A1A6D0 /* framework */,
-				2C5BBF8D213FCE7700A1A6D0 /* Modules */,
+				2C5BBF8D213FCE7700A1A6D0 /* Modules(业务模块划分) */,
 				2C5BBF89213FCCE600A1A6D0 /* ThirdLib */,
 			);
 			path = Classes;
@@ -386,8 +422,9 @@
 		2C5BBF88213FCCC000A1A6D0 /* framework */ = {
 			isa = PBXGroup;
 			children = (
-				2C5BBF91213FD11500A1A6D0 /* const */,
-				2C5BBF8A213FCD7C00A1A6D0 /* utility */,
+				2C5BBF91213FD11500A1A6D0 /* const(使用.h文件对常量进行分类管理,保证每一种类型的常量存在同一个.h文件中) */,
+				2C5BBF8A213FCD7C00A1A6D0 /* utility(项目中基础工具类) */,
+				2C43700021906C5C000D0E54 /* framework_A(比如A是某业务依赖的数据层) */,
 			);
 			path = framework;
 			sourceTree = "<group>";
@@ -399,17 +436,17 @@
 			path = ThirdLib;
 			sourceTree = "<group>";
 		};
-		2C5BBF8A213FCD7C00A1A6D0 /* utility */ = {
+		2C5BBF8A213FCD7C00A1A6D0 /* utility(项目中基础工具类) */ = {
 			isa = PBXGroup;
 			children = (
-				2C5BBFA0213FD35000A1A6D0 /* file */,
-				2C5BBF9C213FD29300A1A6D0 /* NSUserDefault */,
-				2C5BBF9A213FD24C00A1A6D0 /* network */,
-				2C5BBF99213FD23B00A1A6D0 /* notification */,
+				2C5BBFA0213FD35000A1A6D0 /* file(文件操作相关类,项目中所有文件操作都由此类完成方便调试) */,
+				2C5BBF9C213FD29300A1A6D0 /* NSUserDefault(plist操作相关类,项目中所有plist操作都由此类完成方便调试) */,
+				2C5BBF9A213FD24C00A1A6D0 /* network(网络监控工具类) */,
+				2C5BBF99213FD23B00A1A6D0 /* notification(通知操作相关类,其他地方使用通知可参考此处) */,
 				2C5BBF8C213FCD9600A1A6D0 /* threading */,
 				2C498C922140CC970007DCBF /* category */,
 			);
-			path = utility;
+			path = "utility(项目中基础工具类)";
 			sourceTree = "<group>";
 		};
 		2C5BBF8C213FCD9600A1A6D0 /* threading */ = {
@@ -419,23 +456,26 @@
 			path = threading;
 			sourceTree = "<group>";
 		};
-		2C5BBF8D213FCE7700A1A6D0 /* Modules */ = {
+		2C5BBF8D213FCE7700A1A6D0 /* Modules(业务模块划分) */ = {
 			isa = PBXGroup;
 			children = (
+				2C436FFD21906ABF000D0E54 /* Module_A(此处命名借鉴Casa代码勿喷) */,
+				2C436FFE21906ACC000D0E54 /* Module_B */,
+				2C436FFF21906AD2000D0E54 /* Module_C */,
 			);
-			path = Modules;
+			path = "Modules(业务模块划分)";
 			sourceTree = "<group>";
 		};
-		2C5BBF91213FD11500A1A6D0 /* const */ = {
+		2C5BBF91213FD11500A1A6D0 /* const(使用.h文件对常量进行分类管理,保证每一种类型的常量存在同一个.h文件中) */ = {
 			isa = PBXGroup;
 			children = (
 				2C5BBF95213FD11500A1A6D0 /* CKYSScreenConst.h */,
 				2C5BBF96213FD11500A1A6D0 /* CKYSRequestServiceResultToastConst.h */,
 			);
-			path = const;
+			path = "const(使用.h文件对常量进行分类管理,保证每一种类型的常量存在同一个.h文件中)";
 			sourceTree = "<group>";
 		};
-		2C5BBF99213FD23B00A1A6D0 /* notification */ = {
+		2C5BBF99213FD23B00A1A6D0 /* notification(通知操作相关类,其他地方使用通知可参考此处) */ = {
 			isa = PBXGroup;
 			children = (
 				2C498C882140C4B70007DCBF /* CKNotificationPostCenter.h */,
@@ -445,10 +485,10 @@
 				2C498C8E2140C69C0007DCBF /* CKDemoNotificationHelper.h */,
 				2C498C8F2140C69C0007DCBF /* CKDemoNotificationHelper.m */,
 			);
-			path = notification;
+			path = "notification(通知操作相关类,其他地方使用通知可参考此处)";
 			sourceTree = "<group>";
 		};
-		2C5BBF9A213FD24C00A1A6D0 /* network */ = {
+		2C5BBF9A213FD24C00A1A6D0 /* network(网络监控工具类) */ = {
 			isa = PBXGroup;
 			children = (
 				2C498D18214100950007DCBF /* Reachability.h */,
@@ -456,25 +496,25 @@
 				2C498D152141003D0007DCBF /* CKNetworkStatusManager.h */,
 				2C498D162141003D0007DCBF /* CKNetworkStatusManager.m */,
 			);
-			path = network;
+			path = "network(网络监控工具类)";
 			sourceTree = "<group>";
 		};
-		2C5BBF9C213FD29300A1A6D0 /* NSUserDefault */ = {
+		2C5BBF9C213FD29300A1A6D0 /* NSUserDefault(plist操作相关类,项目中所有plist操作都由此类完成方便调试) */ = {
 			isa = PBXGroup;
 			children = (
 				2C498D042140DB4D0007DCBF /* CKUserDefaultCenter.h */,
 				2C498D052140DB4D0007DCBF /* CKUserDefaultCenter.m */,
 			);
-			path = NSUserDefault;
+			path = "NSUserDefault(plist操作相关类,项目中所有plist操作都由此类完成方便调试)";
 			sourceTree = "<group>";
 		};
-		2C5BBFA0213FD35000A1A6D0 /* file */ = {
+		2C5BBFA0213FD35000A1A6D0 /* file(文件操作相关类,项目中所有文件操作都由此类完成方便调试) */ = {
 			isa = PBXGroup;
 			children = (
 				2C498D012140D9380007DCBF /* CKFileUtils.h */,
 				2C498D022140D9380007DCBF /* CKFileUtils.m */,
 			);
-			path = file;
+			path = "file(文件操作相关类,项目中所有文件操作都由此类完成方便调试)";
 			sourceTree = "<group>";
 		};
 		B79B20B329C3043585AB7EF2 /* Pods */ = {
