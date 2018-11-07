@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) CKYSNetworkErrorView *networkErrorView;
 
-@property (nonatomic, strong) UIView *parentView;
+@property (nonatomic, weak) UIView *parentView;
 
 @end
 

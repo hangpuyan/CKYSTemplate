@@ -1,16 +1,16 @@
 //
-//  CKYSPalceHolderView.m
+//  CKYSPlaceHolderView.m
 //  CKYSPlatform
 //
 //  Created by Yan on 2018/7/18.
 //  Copyright © 2018年 ckys. All rights reserved.
 //
 
-#import "CKYSPalceHolderView.h"
+#import "CKYSPlaceHolderView.h"
 #import "Masonry.h"
 #import "UILabel+Category.h"
 
-@interface CKYSPalceHolderView ()
+@interface CKYSPlaceHolderView ()
 
 @property (nonatomic, strong) UILabel *labelTitle;
 
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation CKYSPalceHolderView
+@implementation CKYSPlaceHolderView
 
 - (void)show {
     self.hidden = false;

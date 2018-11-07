@@ -24,4 +24,8 @@
 
 #define SCREEN_TAB_BAR_HEIGHT       ([UIScreen mainScreen].bounds.size.height>=812 ? 83 : 49)
 
+#define BOTTOM_BAR_HEIGHT       ([UIScreen mainScreen].bounds.size.height>=812 ? 34 : 0)
+
+#define  IPHONE_X ([UIScreen mainScreen].bounds.size.height>=812 ? YES : NO)
+
 #endif /* CKYSScreenConst_h */

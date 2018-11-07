@@ -49,9 +49,6 @@ static const void *CKYSNoticeViewKey = &CKYSNoticeViewKey;
     if (!self.viewNetError) {
         [self initView];
     }
-    if ([NSNilObject isNilOrNullObject:title]){
-        return;
-    }
     dispatch_async(dispatch_get_main_queue(), ^{        
         if (self.viewNetError && !self.viewNetError.visible) {
             self.viewNetError.textLabel.text = title;

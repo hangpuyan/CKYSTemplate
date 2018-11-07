@@ -12,7 +12,7 @@
 
 + (void)initBaiduMapSDK {
 
-#waring todo... initBaiduMap
+
     
 }
 
