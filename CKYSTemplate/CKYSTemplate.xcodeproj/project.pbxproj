@@ -65,6 +65,7 @@
 		2C5593002192A7000035C4EB /* A_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5592FF2192A7000035C4EB /* A_ViewController.m */; };
 		2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */; };
 		2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4AE02213CB7F400E43798 /* Images.xcassets */; };
+		2CACD0AB2194559500180412 /* 关于抽离系统某些常用函数.md in Resources */ = {isa = PBXBuildFile; fileRef = 2CACD0AA2194559500180412 /* 关于抽离系统某些常用函数.md */; };
 		F1C77E22D9CF71157BA06877 /* libPods-CKYSTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C696596B505724BD7A92B1A4 /* libPods-CKYSTemplate.a */; };
 /* End PBXBuildFile section */
 
@@ -219,6 +220,7 @@
 		2C5BBF8F213FD0F000A1A6D0 /* CKAppSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAppSystemInfo.h; sourceTree = "<group>"; };
 		2C5BBF96213FD11500A1A6D0 /* RequestServiceResultToastConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestServiceResultToastConst.h; sourceTree = "<group>"; };
 		2CA4AE02213CB7F400E43798 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2CACD0AA2194559500180412 /* 关于抽离系统某些常用函数.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "关于抽离系统某些常用函数.md"; sourceTree = SOURCE_ROOT; };
 		80FFD0C98890102AA525C8BD /* Pods-CKYSTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKYSTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CKYSTemplate/Pods-CKYSTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		C696596B505724BD7A92B1A4 /* libPods-CKYSTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CKYSTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -339,6 +341,7 @@
 		2C436FFB219066F8000D0E54 /* UIViewController(抽离Pop&Push操作方便调试) */ = {
 			isa = PBXGroup;
 			children = (
+				2CACD0AA2194559500180412 /* 关于抽离系统某些常用函数.md */,
 				2C436FE521906682000D0E54 /* UIViewController+NavigationBarHidden.h */,
 				2C436FE821906682000D0E54 /* UIViewController+NavigationBarHidden.m */,
 				2C436FE721906682000D0E54 /* UIViewController+NavigationBarStatusBar.h */,
@@ -931,6 +934,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */,
+				2CACD0AB2194559500180412 /* 关于抽离系统某些常用函数.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
