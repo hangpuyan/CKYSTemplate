@@ -12,8 +12,8 @@
 @implementation AppDelegate (UI)
 
 - (void)initRootViewController {
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[A_ViewController alloc]init];
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[A_ViewController alloc]init]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 }

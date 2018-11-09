@@ -7,44 +7,64 @@
 //
 
 #import "A_ViewController.h"
+
 #import "UIViewController+NavigationBarHidden.h"
 #import "UIViewController+NavLeftItemBack.h"
 #import "UIViewController+PopViewController.h"
+#import "UIViewController+PushViewController.h"
+#import "UIViewController+NavigationBarStatusBar.h"
+#import "UIViewController+NoticeView.h"
+
 #import "A_TableView.h"
 #import "A_TableViewCell.h"
 #import "A_VideoView.h"
 #import "A_TableViewCellConst.h"
+
+#import "Masonry.h"
+#import "ScreenConst.h"
+
 #import "A_Service.h"
 #import "A_ServiceResult.h"
 #import "A_ServiceParameter.h"
 #import "A_Item.h"
 #import "A_ServicePageSizeConst.h"
-#import "UIViewController+NavigationBarStatusBar.h"
-#import "UIViewController+NoticeView.h"
-#import "Masonry.h"
-#import "ScreenConst.h"
 
 @interface A_ViewController ()
 
 @end
 
 @implementation A_ViewController {
+    __weak id<A_ViewControllerDelegate> _delegate;
+    id _parameter;
     NSMutableArray <A_Item *>*dataArrayMinePage;
     A_TableView *_sourceCenterMainPageTableView;
 }
 
-+ (void)jumpTo_A_PageFromViewController:(UIViewController *)viewController xxxId:(NSString *)xxxId {
-    [viewController.navigationController pushViewController:[[A_ViewController alloc] initWithXXXId:xxxId] animated:YES];
+#pragma mark - A_ViewControllerInputProtocol
+
++ (void)jumpTo_A_PageFromViewController:(UIViewController *)viewController delegate:(id<A_ViewControllerDelegate>)delegate parameter:(id)parameter {
+    
+    A_ViewController *aPage = [[A_ViewController alloc] initWithDelegate:delegate parameter:parameter];
+    [A_ViewController pushToObjViewController:aPage animated:YES fromViewController:viewController];
 }
 
-- (instancetype)initWithXXXId:(NSString *)xxxId {
-    
-    return [self init];
+#pragma mark - A_ViewControllerInstanceProtocol
+
+- (instancetype)initWithDelegate:(id<A_ViewControllerDelegate>)delegate parameter:(id)parameter {
+    self = [super init];
+    if (self) {
+        _delegate = delegate;
+        _parameter = parameter;
+    }
+    return self;
 }
+
+#pragma mark - life
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self private_initUI];
+    [self private_get_module_A_DataFromServer];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -63,14 +83,18 @@
 
 - (void)private_navLeftItemBackAction:(UIButton *)sender {
     [self.class objViewController:self popViewControllerAnimated:YES];
+    if (_delegate && [_delegate respondsToSelector:@selector(a_actionCompleteHandleWithParameter:)]) {
+        [_delegate a_actionCompleteHandleWithParameter:@""];
+    }
 }
 
-- (void)private_sourceCenterAddButtonAction:(UIButton *)sender {
-    
-}
-
-- (void)private_getRewardMaxMoneyValueFromServer {
-    
+- (void)private_get_module_A_DataFromServer {
+    A_ServiceParameter *a_parameter = [[A_ServiceParameter alloc] initWithXXXId:@"" pageSize:0 pageNumber:0];
+    [A_Service getResourceDataServiceWithParameter:a_parameter completeHandle:^(A_ServiceResult * _Nonnull sourceCenterResult) {
+#warning todo...refresh UI
+    } failure:^(NSError * _Nonnull error) {
+        
+    }];
 }
 
 #pragma mark - initUI

@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "A_ViewControllerInterface.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface A_ViewController : UIViewController
-
-+ (void)jumpTo_A_PageFromViewController:(UIViewController *)viewController xxxId:(NSString *)xxxId;
+/**
+ 业务A Controller 接口定义
+ 1. delegate 单独定义一个文件
+ 2. 初始化需要传入参数的定义一个接口
+ */
+@interface A_ViewController : UIViewController <A_ViewControllerInstanceProtocol, A_ViewControllerInputProtocol>
 
 @end
 
