@@ -29,6 +29,8 @@
 #import "A_Item.h"
 #import "A_ServicePageSizeConst.h"
 
+#import "HPNetworkStatusManager.h"
+
 @interface A_ViewController ()
 
 @end
@@ -65,6 +67,7 @@
     [super viewDidLoad];
     [self private_initUI];
     [self private_get_module_A_DataFromServer];
+    [[HPNetworkStatusManager manager] registerNetworkChangeListener:self sel:@selector(private_netWorkStatusChangedMontor:)];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -77,6 +80,19 @@
     [super viewWillDisappear:animated];
     
     [self setObjViewControllerNavigationBarHidden:NO];
+}
+
+#pragma mark - 网络状态监控使用
+- (void)private_netWorkStatusChangedMontor:(HPNetworkStatus *)sender {
+    if (sender.networkAvailable) {
+        
+    } else if (sender.wifiAvailale) {
+        
+    } else if (sender.wwanAvailable) {
+        
+    }
+    //获取当前网络状态
+    HPNetworkStatus *currentNetworkStatus = [HPNetworkStatusManager manager].currentHPNetworkStatus;
 }
 
 #pragma mark - private
@@ -117,6 +133,7 @@
 }
 
 - (void)dealloc {
+    [[HPNetworkStatusManager manager] unRegisterNetworkChangeListener:self];
     NSLog(@"dealloc%@",self);
 }
 
