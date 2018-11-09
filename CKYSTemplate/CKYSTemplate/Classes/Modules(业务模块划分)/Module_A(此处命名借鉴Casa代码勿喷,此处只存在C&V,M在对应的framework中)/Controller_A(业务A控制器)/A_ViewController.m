@@ -31,6 +31,8 @@
 
 #import "HPNetworkStatusManager.h"
 
+#import "LoginNotificationHelper.h"
+
 @interface A_ViewController ()
 
 @end
@@ -68,6 +70,7 @@
     [self private_initUI];
     [self private_get_module_A_DataFromServer];
     [[HPNetworkStatusManager manager] registerNetworkChangeListener:self sel:@selector(private_netWorkStatusChangedMontor:)];
+    [LoginNotificationHelper registerLoginSuccessNotificationObserver:self selector:@selector(private_notificationLoginSuccess) object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -94,6 +97,18 @@
     //获取当前网络状态
     HPNetworkStatus *currentNetworkStatus = [HPNetworkStatusManager manager].currentHPNetworkStatus;
 }
+
+#pragma mark - 模拟登录成功
+- (void)private_loginAction {
+    [LoginNotificationHelper postLoginSuccessNotification:nil object:nil];
+}
+
+#pragma mark - 登录成功使用
+- (void)private_notificationLoginSuccess {
+    
+}
+
+
 
 #pragma mark - private
 
@@ -133,6 +148,7 @@
 }
 
 - (void)dealloc {
+    [LoginNotificationHelper unregisterLoginSuccessNotificationObserver:self object:nil];
     [[HPNetworkStatusManager manager] unRegisterNetworkChangeListener:self];
     NSLog(@"dealloc%@",self);
 }

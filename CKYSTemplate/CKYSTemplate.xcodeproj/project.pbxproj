@@ -61,7 +61,7 @@
 		2C498D062140DB4E0007DCBF /* UserDefaultCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D052140DB4D0007DCBF /* UserDefaultCenter.m */; };
 		2C498D172141003D0007DCBF /* HPNetworkStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D162141003D0007DCBF /* HPNetworkStatusManager.m */; };
 		2C498D1A214100950007DCBF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D19214100950007DCBF /* Reachability.m */; };
-		2C5321582195A44600C57437 /* 通知使用.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C5321572195A44600C57437 /* 通知使用.md */; };
+		2C5321582195A44600C57437 /* 通知使用说明.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C5321572195A44600C57437 /* 通知使用说明.md */; };
 		2C53215A2195A94400C57437 /* 网络状态监控使用说明.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C5321592195A94400C57437 /* 网络状态监控使用说明.md */; };
 		2C5593002192A7000035C4EB /* A_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5592FF2192A7000035C4EB /* A_ViewController.m */; };
 		2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */; };
@@ -221,7 +221,7 @@
 		2C498D162141003D0007DCBF /* HPNetworkStatusManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPNetworkStatusManager.m; sourceTree = "<group>"; };
 		2C498D18214100950007DCBF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		2C498D19214100950007DCBF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		2C5321572195A44600C57437 /* 通知使用.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "通知使用.md"; sourceTree = "<group>"; };
+		2C5321572195A44600C57437 /* 通知使用说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "通知使用说明.md"; sourceTree = "<group>"; };
 		2C5321592195A94400C57437 /* 网络状态监控使用说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "网络状态监控使用说明.md"; sourceTree = "<group>"; };
 		2C5592FE2192A7000035C4EB /* A_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A_ViewController.h; sourceTree = "<group>"; };
 		2C5592FF2192A7000035C4EB /* A_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A_ViewController.m; sourceTree = "<group>"; };
@@ -800,7 +800,7 @@
 		2C5BBF99213FD23B00A1A6D0 /* notification(通知操作相关类,其他地方使用通知可参考此处) */ = {
 			isa = PBXGroup;
 			children = (
-				2C5321572195A44600C57437 /* 通知使用.md */,
+				2C5321572195A44600C57437 /* 通知使用说明.md */,
 				2C498C882140C4B70007DCBF /* HPNotificationPostCenter.h */,
 				2C498C892140C4B70007DCBF /* HPNotificationPostCenter.m */,
 				2C498C8B2140C54C0007DCBF /* HPNotificationObserverCenter.h */,
@@ -1082,7 +1082,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C5321582195A44600C57437 /* 通知使用.md in Resources */,
+				2C5321582195A44600C57437 /* 通知使用说明.md in Resources */,
 				2C53215A2195A94400C57437 /* 网络状态监控使用说明.md in Resources */,
 				2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */,
 				2CACD0D321956BE400180412 /* 关于抽离系统某些常用函数.md in Resources */,
