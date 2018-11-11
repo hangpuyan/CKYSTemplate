@@ -34,14 +34,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol A_StatusProtocol <NSObject>
 
-- (NSString *)getResStatusString;
-
-- (NSArray <NSString *>*)getImageUrlList;
-
-- (BOOL)isSingleImageCell;
+- (NSString *)getResourceStatusString;
 
 @end
 
+/** 业务场景需要对服务端数进行重组 */
 @protocol A_ImageProtocol <NSObject>
 
 - (NSArray <NSString *>*)getImageUrlList;
@@ -72,13 +69,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol A_VideoDataProtocol <NSObject>
 
+- (BOOL)isVideoTypeResource;
+
 - (void)setVideoUrl:(NSString *)videoUrl;
 
 - (void)setVideoExpiryDate:(NSString *)expiryDate;
 
 - (void)setVideoPhotoUrl:(NSString *)videoPhotoUrl;
-
-- (BOOL)isVideoTypeResource;
 
 @end
 
@@ -101,6 +98,15 @@ A_AllTextProtocol,
 A_VideoDateProtocol,
 A_VideoDataProtocol,
 A_ShareDataProtocol>
+
+#warning todo... .h属性一律使用readonly .m属性使用readwrite 需要set的提供set接口防止数据污染
+@property (nonatomic, assign, readonly) BOOL isMyselfSource;
+
+@property (nonatomic, copy, readonly) NSString *resourceId;
+
+@property (nonatomic, copy, readonly) NSString *videoUrl;
+/** 服务端返回数据 */
+@property (nonatomic, strong, readonly) NSMutableArray <NSString *>*imageUrlList;
 
 @end
 

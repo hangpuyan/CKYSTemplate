@@ -8,11 +8,13 @@
 
 #import "AppDelegate+SDK.h"
 #import "HPBuglyHelper.h"
+#import "HPSDKInitManager.h"
 
 @implementation AppDelegate (SDK)
 
-- (void)initBugly {
-    [HPBuglyHelper initBugly];
+- (void)initSDK {
+    
+    [HPSDKInitManager initSDK];
 }
 
 @end

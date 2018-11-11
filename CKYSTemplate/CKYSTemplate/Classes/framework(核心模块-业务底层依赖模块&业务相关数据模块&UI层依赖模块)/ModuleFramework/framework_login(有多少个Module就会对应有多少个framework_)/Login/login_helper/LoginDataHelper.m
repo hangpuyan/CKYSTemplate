@@ -11,12 +11,21 @@
 
 @implementation LoginDataHelper
 
-+ (void)saveLoginDataItem:(LoginServiceItem *)loginDataItem {
-#warning todo...归档 save
-    
++ (void)saveLoginDataItem:(LoginDataItem *)loginDataItem {
+
+    //NSKeyedArchiver 类 线程不安全隐藏写操作需要加锁
+    @synchronized (self) {
+#warning todo... save
+
+        
+    }
 }
 
-+ (LoginServiceItem *)loadLoginDataItem {
++ (LoginDataItem *)loadLoginDataItem {
+    
+    @synchronized (self) {
+        
+    }
     return nil;
 }
 

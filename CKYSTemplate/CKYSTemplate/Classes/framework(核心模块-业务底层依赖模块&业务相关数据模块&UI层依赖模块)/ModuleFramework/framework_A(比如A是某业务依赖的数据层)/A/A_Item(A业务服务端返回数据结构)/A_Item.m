@@ -11,79 +11,93 @@
 
 @interface A_Item ()
 
+@property (nonatomic, strong) NSMutableArray <NSString *>*imageUrlList;
+
 @end
 
 @implementation A_Item
 
-- (NSString *)getResStatusString {
-    
-    return @"";
-}
-
-- (NSArray <NSString *>*)getImageUrlList {
-    NSMutableArray *imageUrlList = [NSMutableArray array];
-    
-    return imageUrlList.mutableCopy;
-}
-
-- (BOOL)isSingleImageCell {
-    return [self getImageUrlList].count==1;
-}
-
-- (NSString *)getSupportParameterOperationString {
-    return @"1";
-}
-
-- (BOOL)isMyselfSource {
-    
-    return YES;
-}
-
-- (BOOL)isCanRewardOperation {
-    return ![self isMyselfSource] && [self isSelfNotRewardOtherSource];
-}
+#pragma mark - A_RewardProtocol
 
 - (BOOL)isSelfNotRewardOtherSource {
     return YES;
 }
 
-- (BOOL)isSelfNotSupportOtherSource {
-    return NO;
+- (BOOL)isMyselfSource {
+    return YES;
 }
 
-- (void)setSelfSupportActionState:(BOOL)state {
-    
+- (BOOL)isCanRewardOperation {
+    return YES;
 }
 
 - (void)setSelfRewardActionState:(BOOL)state {
     
 }
 
+#pragma mark - A_SupportProtocol
+
+- (NSString *)getSupportParameterOperationString {
+    return nil;
+}
+
+- (BOOL)isSelfNotSupportOtherSource {
+    return YES;
+}
+
+- (void)setSelfSupportActionState:(BOOL)state {
+    
+}
+
+#pragma mark - A_StatusProtocol
+
+- (NSString *)getResourceStatusString {
+    return nil;
+}
+
+#pragma mark - A_ImageProtocol
+
+- (NSArray <NSString *>*)getImageUrlList {
+    return nil;
+}
+
+- (BOOL)isSingleImageCell {
+    return YES;
+}
 #pragma mark - A_AllTextProtocol
+
 - (BOOL)isCanJumpToAllTextDetailPageOnMinePage {
     return YES;
 }
 
-- (BOOL)isVideoInvalidate {
+#pragma mark - A_ShareDataProtocol
 
-    return NO;
+- (A_Item *)getSharePhotoItemList {
+    return nil;
+}
+
+#pragma mark - A_VideoDateProtocol
+
+- (BOOL)isVideoInvalidate {
+    return YES;
+}
+
+#pragma mark - A_VideoDataProtocol
+
+- (BOOL)isVideoTypeResource {
+    return YES;
 }
 
 - (void)setVideoUrl:(NSString *)videoUrl {
-
+    
 }
 
 - (void)setVideoExpiryDate:(NSString *)expiryDate {
-
+    
 }
 
 - (void)setVideoPhotoUrl:(NSString *)videoPhotoUrl {
-
-}
-
-- (BOOL)isVideoTypeResource {
-
-    return YES;    
+    
 }
 
 @end

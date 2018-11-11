@@ -16,6 +16,8 @@
 
 @implementation UserDefaultCenter
 
+#pragma mark - INIT
+
 - (instancetype)init {
     if (self = [super init]) {
         self.userDefaultCenter = [NSUserDefaults standardUserDefaults];
@@ -30,7 +32,6 @@
     dispatch_once(&onceToken, ^{
         center = [[self alloc] init];
     });
-    
     return center;
 }
 
@@ -38,11 +39,12 @@
     return self.userDefaultCenter;
 }
 
+#pragma mark - GET
+
 - (BOOL)boolForKey:(NSString *)key {
     if ([self p_validKey:key]) {
         return [self.userDefaultCenter boolForKey:key];
     }
-    
     return NO;
 }
 
@@ -50,7 +52,6 @@
     if ([self p_validKey:key]) {
         return [self.userDefaultCenter floatForKey:key];
     }
-    
     return 0.0;
 }
 
@@ -58,7 +59,6 @@
     if ([self p_validKey:key]) {
         return [self.userDefaultCenter doubleForKey:key];
     }
-    
     return 0.0;
 }
 
@@ -70,7 +70,6 @@
             return [value longLongValue];
         }
     }
-    
     return -1;
 }
 
@@ -78,7 +77,6 @@
     if ([self p_validKey:key]) {
         return [self.userDefaultCenter integerForKey:key];
     }
-    
     return -1;
 }
 
@@ -86,7 +84,6 @@
     if ([self p_validKey:key]) {
         return [self.userDefaultCenter stringForKey:key];
     }
-    
     return @"";
 }
 
@@ -94,7 +91,6 @@
     if ([self p_validKey:key]) {
         return [self.userDefaultCenter arrayForKey:key];
     }
-    
     return @[];
 }
 
@@ -102,19 +98,16 @@
     if ([self p_validKey:key]) {
         return [self.userDefaultCenter dictionaryForKey:key];
     }
-    
     return @{};
 }
 
 - (nullable NSDate *)dateForKey:(nullable NSString *)key {
     if ([self p_validKey:key]) {
         NSDate *value = [self.userDefaultCenter objectForKey:key];
-        
         if (value && [value isKindOfClass:[NSDate class]]) {
             return value;
         }
     }
-    
     return nil;
 }
 
@@ -122,9 +115,11 @@
     if ([self p_validKey:key]) {
         return [self.userDefaultCenter objectForKey:key];
     }
-    
     return nil;
 }
+
+
+#pragma mark - SET
 
 - (void)setBool:(BOOL)value forKey:(nullable NSString *)key {
     if ([self p_validKey:key]) {
@@ -188,12 +183,10 @@
 
 - (BOOL)synchronize {
     BOOL success = [self.userDefaultCenter synchronize];
-    
     return success;
 }
 
-#pragma mark -
-#pragma mark Private
+#pragma mark - Private
 
 - (BOOL)p_validKey:(NSString *)key {
     return (key && key.length > 0);

@@ -11,8 +11,16 @@
 @implementation HPBaiduMapHelper
 
 + (void)initBaiduMapSDK {
+    
+#warning todo... initBaiduMapSDK
+    
+}
 
++ (void)startLocationWithDelegate:(id)delegate {
+    
+}
 
++ (void)stopLocation {
     
 }
 

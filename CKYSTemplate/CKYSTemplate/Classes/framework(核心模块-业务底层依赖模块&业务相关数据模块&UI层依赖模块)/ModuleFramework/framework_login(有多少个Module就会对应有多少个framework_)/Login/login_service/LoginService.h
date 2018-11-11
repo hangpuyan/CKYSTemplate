@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class LoginServiceParameter, LoginServiceResult;
 
+/** 登录服务接口数据获取类 继承自 NetworkService */
 @interface LoginService : NetworkService
 
 + (void)loginRequestServerWithParameter:(LoginServiceParameter *)parameter completeHandle:(void(^)(LoginServiceResult *loginServiceResult))completeHandle failure:(void(^)(NSError *error))failure;

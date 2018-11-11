@@ -20,13 +20,19 @@
     
     NSString *LOGIN_SERVICE_URL_STRING = [NSString stringWithFormat:@"%@%@",ROOT_URL,LOGIN_SERVICE_URL_CONST];
     NSMutableDictionary *login_parameter = [NSMutableDictionary dictionary];
-    [login_parameter safeSetObject:@"" forKey:@""];
-    
+    [login_parameter safeSetObject:parameter.userLoginId forKey:@"userLoginId"];
+    [login_parameter safeSetObject:parameter.password forKey:@"password"];
+
     [self postRequestServerWithUrl:LOGIN_SERVICE_URL_STRING parameter:login_parameter completeHandle:^(id  _Nonnull result) {
 #warning todo...data from server
-        
+        LoginServiceResult *login_service_result = [[LoginServiceResult alloc] init];
+        if (completeHandle) {
+            completeHandle(login_service_result);
+        }
     } failure:^(NSError * _Nonnull error) {
-        
+        if (failure) {
+            failure(error);
+        }
     }];
 }
 

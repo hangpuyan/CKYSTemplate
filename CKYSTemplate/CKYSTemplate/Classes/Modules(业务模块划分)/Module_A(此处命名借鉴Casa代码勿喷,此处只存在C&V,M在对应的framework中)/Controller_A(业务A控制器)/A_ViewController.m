@@ -33,6 +33,12 @@
 
 #import "LoginNotificationHelper.h"
 
+#import "LoginService.h"
+#import "LoginServiceParameter.h"
+#import "LoginServiceResult.h"
+#import "LoginDataHelper.h"
+#import "LoginDataItem.h"
+
 @interface A_ViewController ()
 
 @end
@@ -100,15 +106,24 @@
 
 #pragma mark - 模拟登录成功
 - (void)private_loginAction {
-    [LoginNotificationHelper postLoginSuccessNotification:nil object:nil];
+    LoginServiceParameter *loginServiceParameter = [[LoginServiceParameter alloc] initWithUserLoginId:@"" password:@""];
+    [LoginService loginRequestServerWithParameter:loginServiceParameter completeHandle:^(LoginServiceResult * _Nonnull loginServiceResult) {
+        if (loginServiceResult.isRequestServiceSuccess) {
+            LoginDataItem *loginDataItem = [[LoginDataItem alloc] init];
+            [LoginDataHelper saveLoginDataItem:loginDataItem];
+            [LoginNotificationHelper postLoginSuccessNotification:@{} object:@""];
+        }
+    } failure:^(NSError * _Nonnull error) {
+        
+    }];
 }
 
-#pragma mark - 登录成功使用
+#pragma mark - 登录成功
 - (void)private_notificationLoginSuccess {
+
+#warning todo... refresh UI
     
 }
-
-
 
 #pragma mark - private
 
@@ -139,7 +154,7 @@
     if (!_sourceCenterMainPageTableView) {
         _sourceCenterMainPageTableView = [[A_TableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-BOTTOM_BAR_HEIGHT) style:UITableViewStylePlain];
         if (@available(iOS 11.0, *)) {//iOS 10 & 11 view.y 10 = 64 11 = 0
-            _sourceCenterMainPageTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        _sourceCenterMainPageTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         } else {
             self.automaticallyAdjustsScrollViewInsets = NO;
         }

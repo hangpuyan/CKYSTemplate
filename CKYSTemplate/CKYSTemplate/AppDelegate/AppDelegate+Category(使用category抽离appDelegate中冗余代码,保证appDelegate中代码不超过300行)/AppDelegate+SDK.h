@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AppDelegate (SDK)
 
-- (void)initBugly;
+- (void)initSDK;
 
 @end
 

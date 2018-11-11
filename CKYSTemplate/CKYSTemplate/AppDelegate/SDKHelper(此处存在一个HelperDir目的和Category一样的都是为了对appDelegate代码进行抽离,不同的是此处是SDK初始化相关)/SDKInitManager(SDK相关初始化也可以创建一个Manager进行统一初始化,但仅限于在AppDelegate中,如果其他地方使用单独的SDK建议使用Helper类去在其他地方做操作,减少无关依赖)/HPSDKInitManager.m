@@ -7,13 +7,23 @@
 //
 
 #import "HPSDKInitManager.h"
+#import "HPBuglyHelper.h"
+#import "HPBaiduMapHelper.h"
 
 @implementation HPSDKInitManager
 
 + (void)initSDK {
 
 #warning todo...init UM & BaiduMap or other SDK
-    
+    [self initBugly];
 }
+
++ (void)initBugly {
+    [HPBuglyHelper initBugly];
+}
++ (void)initBaiduMap {
+    [HPBaiduMapHelper initBaiduMapSDK];
+}
+
 
 @end

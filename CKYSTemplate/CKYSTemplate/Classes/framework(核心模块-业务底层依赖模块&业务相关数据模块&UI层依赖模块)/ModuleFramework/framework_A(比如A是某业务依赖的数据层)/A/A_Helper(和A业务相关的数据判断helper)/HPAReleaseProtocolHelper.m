@@ -7,19 +7,20 @@
 //
 
 #import "HPAReleaseProtocolHelper.h"
+#import "UserDefaultCenter.h"
 
 @implementation HPAReleaseProtocolHelper
 
-#define HP_AReleaseProtocolDataKeyConst @""
+#define HP_A_ReleaseProtocolDataKeyConst @""
 
 #define HP_A_ReleaseProtocolServerDataKeyConst @""
 
 + (void)saveAReleaseProtocolDataWithJson:(NSDictionary *)json {
     @try {
         NSString *data = [json objectForKey:HP_A_ReleaseProtocolServerDataKeyConst];
-        if (data.length) {            
-            [[NSUserDefaults standardUserDefaults] setObject:data forKey:HP_AReleaseProtocolDataKeyConst];
-            [[NSUserDefaults standardUserDefaults] synchronize];
+        if (data.length) {
+            [[UserDefaultCenter userDefaultCenter] setObject:data forKey:HP_A_ReleaseProtocolDataKeyConst];
+            [[UserDefaultCenter userDefaultCenter] synchronize];
         }
     } @catch (NSException *exception) {
         
@@ -29,7 +30,7 @@
 }
 
 + (NSString *)getAReleaseProtocolData {
-   return [[NSUserDefaults standardUserDefaults] objectForKey:HP_AReleaseProtocolDataKeyConst];
+   return [[UserDefaultCenter userDefaultCenter] objectForKey:HP_A_ReleaseProtocolDataKeyConst];
 }
 
 @end

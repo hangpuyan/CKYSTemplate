@@ -17,7 +17,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self initBugly];
+    [self initSDK];
     [self initRootViewController];
     return YES;
 }

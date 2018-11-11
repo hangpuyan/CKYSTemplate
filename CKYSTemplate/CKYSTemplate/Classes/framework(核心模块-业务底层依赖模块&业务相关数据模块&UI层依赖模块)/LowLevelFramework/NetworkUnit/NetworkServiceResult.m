@@ -10,11 +10,11 @@
 
 @implementation NetworkServiceResult
 
-#define NET_WORK_SERVICE_RESULT_CODE_SUCCESS @"200"
+#define NETWORK_SERVICE_RESULT_CODE_SUCCESS 200
 
 - (BOOL)isRequestServiceSuccess {
 
-    return [self.code isEqualToString:NET_WORK_SERVICE_RESULT_CODE_SUCCESS];
+    return self.code == NETWORK_SERVICE_RESULT_CODE_SUCCESS;
 }
 
 @end

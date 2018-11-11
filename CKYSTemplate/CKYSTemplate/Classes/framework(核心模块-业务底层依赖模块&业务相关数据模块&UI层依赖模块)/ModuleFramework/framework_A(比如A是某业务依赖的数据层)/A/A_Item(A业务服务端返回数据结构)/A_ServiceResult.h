@@ -6,11 +6,11 @@
 //  Copyright © 2018 ckys. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "NetworkServiceResult.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface A_ServiceResult : NSObject
+@interface A_ServiceResult : NetworkServiceResult
 
 @end
 

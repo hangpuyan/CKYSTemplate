@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-/** 占位符 基视图 */
+/** 占位符 基视图 子类继承此类根据业务不同修改 占位图片 文案 位置 */
 @interface HPPlaceHolderView : UIView
 
 @property (nonatomic, strong, readonly) UILabel *labelTitle;

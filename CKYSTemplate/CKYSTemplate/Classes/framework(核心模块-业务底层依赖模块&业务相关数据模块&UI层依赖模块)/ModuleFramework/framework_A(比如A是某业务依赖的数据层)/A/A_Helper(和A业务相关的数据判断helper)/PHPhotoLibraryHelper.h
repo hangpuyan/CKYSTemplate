@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^CKYSPhotoLibraryBlock)(BOOL isCanUse);
 
+/** 相册权限判断 */
 @interface PHPhotoLibraryHelper : NSObject
 
 + (void)isCanUsePhotoCompleteHandle:(CKYSPhotoLibraryBlock)completeHandle;

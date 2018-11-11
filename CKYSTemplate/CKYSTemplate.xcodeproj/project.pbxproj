@@ -54,7 +54,6 @@
 		2C498CA12140CC970007DCBF /* UIViewController+LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C982140CC970007DCBF /* UIViewController+LoadingView.m */; };
 		2C498CA42140CC970007DCBF /* UIViewController+SearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C9C2140CC970007DCBF /* UIViewController+SearchItem.m */; };
 		2C498CB92140CD410007DCBF /* HPSearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CB62140CD400007DCBF /* HPSearchItem.m */; };
-		2C498CF72140D6160007DCBF /* UIViewController+NoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CF12140D6160007DCBF /* UIViewController+NoticeView.m */; };
 		2C498CF82140D6160007DCBF /* HPPlaceHolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CF42140D6160007DCBF /* HPPlaceHolderView.m */; };
 		2C498CF92140D6160007DCBF /* HPDataEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498CF62140D6160007DCBF /* HPDataEmptyView.m */; };
 		2C498D032140D9380007DCBF /* FileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D022140D9380007DCBF /* FileUtils.m */; };
@@ -207,11 +206,9 @@
 		2C498CE12140CEC00007DCBF /* HPNetTipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPNetTipView.h; sourceTree = "<group>"; };
 		2C498CE22140CEC00007DCBF /* NSObject+NetworkErrorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NetworkErrorView.h"; sourceTree = "<group>"; };
 		2C498CE32140CEC00007DCBF /* HPNetworkErrorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPNetworkErrorView.m; sourceTree = "<group>"; };
-		2C498CF12140D6160007DCBF /* UIViewController+NoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NoticeView.m"; sourceTree = "<group>"; };
 		2C498CF22140D6160007DCBF /* HPPlaceHolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPlaceHolderView.h; sourceTree = "<group>"; };
 		2C498CF32140D6160007DCBF /* HPDataEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDataEmptyView.h; sourceTree = "<group>"; };
 		2C498CF42140D6160007DCBF /* HPPlaceHolderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPlaceHolderView.m; sourceTree = "<group>"; };
-		2C498CF52140D6160007DCBF /* UIViewController+NoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NoticeView.h"; sourceTree = "<group>"; };
 		2C498CF62140D6160007DCBF /* HPDataEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDataEmptyView.m; sourceTree = "<group>"; };
 		2C498D012140D9380007DCBF /* FileUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileUtils.h; sourceTree = "<group>"; };
 		2C498D022140D9380007DCBF /* FileUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileUtils.m; sourceTree = "<group>"; };
@@ -385,7 +382,7 @@
 			path = "UIViewController(抽离Pop&Push操作方便调试)";
 			sourceTree = "<group>";
 		};
-		2C436FFC21906971000D0E54 /* Category(使用category抽离appDelegate中冗余代码,保证appDelegate中代码不超过300行) */ = {
+		2C436FFC21906971000D0E54 /* AppDelegate+Category(使用category抽离appDelegate中冗余代码,保证appDelegate中代码不超过300行) */ = {
 			isa = PBXGroup;
 			children = (
 				2C43700521906ECB000D0E54 /* AppDelegate+UI.h */,
@@ -393,7 +390,7 @@
 				2C43700821906ED7000D0E54 /* AppDelegate+SDK.h */,
 				2C43700921906ED7000D0E54 /* AppDelegate+SDK.m */,
 			);
-			path = "Category(使用category抽离appDelegate中冗余代码,保证appDelegate中代码不超过300行)";
+			path = "AppDelegate+Category(使用category抽离appDelegate中冗余代码,保证appDelegate中代码不超过300行)";
 			sourceTree = "<group>";
 		};
 		2C436FFD21906ABF000D0E54 /* Module_A(此处命名借鉴Casa代码勿喷,此处只存在C&V,M在对应的framework中) */ = {
@@ -694,8 +691,6 @@
 				2C498CF42140D6160007DCBF /* HPPlaceHolderView.m */,
 				2C498CF32140D6160007DCBF /* HPDataEmptyView.h */,
 				2C498CF62140D6160007DCBF /* HPDataEmptyView.m */,
-				2C498CF52140D6160007DCBF /* UIViewController+NoticeView.h */,
-				2C498CF12140D6160007DCBF /* UIViewController+NoticeView.m */,
 			);
 			path = "DataEmptyView(空页面占位UI)";
 			sourceTree = "<group>";
@@ -714,7 +709,7 @@
 			children = (
 				2C1A9F0D20EE043E00E21FEA /* AppDelegate.h */,
 				2C1A9F0E20EE043E00E21FEA /* AppDelegate.m */,
-				2C436FFC21906971000D0E54 /* Category(使用category抽离appDelegate中冗余代码,保证appDelegate中代码不超过300行) */,
+				2C436FFC21906971000D0E54 /* AppDelegate+Category(使用category抽离appDelegate中冗余代码,保证appDelegate中代码不超过300行) */,
 				2C43700121906D8C000D0E54 /* SDKHelper(此处存在一个HelperDir目的和Category一样的都是为了对appDelegate代码进行抽离,不同的是此处是SDK初始化相关) */,
 			);
 			path = AppDelegate;
@@ -762,7 +757,7 @@
 			children = (
 				2C5BBFA0213FD35000A1A6D0 /* file(文件操作相关类,项目中所有文件操作都由此类完成方便调试) */,
 				2C5BBF9C213FD29300A1A6D0 /* NSUserDefault(plist操作相关类,项目中所有plist操作都由此类完成方便调试) */,
-				2C5BBF9A213FD24C00A1A6D0 /* network(网络监控工具类) */,
+				2C5BBF9A213FD24C00A1A6D0 /* networkReachability(网络监控工具类) */,
 				2C5BBF99213FD23B00A1A6D0 /* notification(通知操作相关类,其他地方使用通知可参考此处) */,
 				2C5BBF8C213FCD9600A1A6D0 /* threading */,
 				2C498C922140CC970007DCBF /* category */,
@@ -811,7 +806,7 @@
 			path = "notification(通知操作相关类,其他地方使用通知可参考此处)";
 			sourceTree = "<group>";
 		};
-		2C5BBF9A213FD24C00A1A6D0 /* network(网络监控工具类) */ = {
+		2C5BBF9A213FD24C00A1A6D0 /* networkReachability(网络监控工具类) */ = {
 			isa = PBXGroup;
 			children = (
 				2C5321592195A94400C57437 /* 网络状态监控使用说明.md */,
@@ -820,7 +815,7 @@
 				2C498D152141003D0007DCBF /* HPNetworkStatusManager.h */,
 				2C498D162141003D0007DCBF /* HPNetworkStatusManager.m */,
 			);
-			path = "network(网络监控工具类)";
+			path = "networkReachability(网络监控工具类)";
 			sourceTree = "<group>";
 		};
 		2C5BBF9C213FD29300A1A6D0 /* NSUserDefault(plist操作相关类,项目中所有plist操作都由此类完成方便调试) */ = {
@@ -847,9 +842,6 @@
 				2CACD0BE2195639C00180412 /* DBUnit */,
 				2CACD0BD2195639300180412 /* FileUnit */,
 				2CACD0BC2195638200180412 /* NetworkUnit */,
-				2CACD0BB2195636B00180412 /* ImageUnit */,
-				2CACD0B92195635100180412 /* AudioUnit */,
-				2CACD0BA2195636100180412 /* VideoUnit */,
 			);
 			path = LowLevelFramework;
 			sourceTree = "<group>";
@@ -870,27 +862,6 @@
 				2C5BBF8A213FCD7C00A1A6D0 /* utility(项目中基础工具类) */,
 			);
 			path = SystemToolKit;
-			sourceTree = "<group>";
-		};
-		2CACD0B92195635100180412 /* AudioUnit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AudioUnit;
-			sourceTree = "<group>";
-		};
-		2CACD0BA2195636100180412 /* VideoUnit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VideoUnit;
-			sourceTree = "<group>";
-		};
-		2CACD0BB2195636B00180412 /* ImageUnit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ImageUnit;
 			sourceTree = "<group>";
 		};
 		2CACD0BC2195638200180412 /* NetworkUnit */ = {
@@ -1174,7 +1145,6 @@
 				2C4371C0219075CC000D0E54 /* A_ImageCollectionView.m in Sources */,
 				2C436FF4219066AD000D0E54 /* UIView+Category.m in Sources */,
 				2C4371BC219075CC000D0E54 /* A_ImageCollectionViewCell.m in Sources */,
-				2C498CF72140D6160007DCBF /* UIViewController+NoticeView.m in Sources */,
 				2CACD0D1219567CE00180412 /* NetworkServiceResult.m in Sources */,
 				2C498D172141003D0007DCBF /* HPNetworkStatusManager.m in Sources */,
 				2C4371BF219075CC000D0E54 /* A_CellHeaderView.m in Sources */,
