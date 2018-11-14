@@ -1,4 +1,10 @@
-#  cocoaPods 管理第三方框架
+#  cocoaPods 管理第三方框架 
+## 如果需要添加第三方框架，请在 podfile 中添加 
+
+`
+请在 podfile 中添加 pod 'XXX' 提交即可，本地pod install，
+不相关的数据不要提交到Git服务端，eg：断点，Xcode 配置，pod framework
+`
 
 target 'CKYSTemplate' do
 
