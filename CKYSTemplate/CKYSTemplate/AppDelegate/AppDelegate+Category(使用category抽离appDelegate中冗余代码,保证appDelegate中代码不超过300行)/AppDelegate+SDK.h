@@ -10,8 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/* 初始化DSDK 分类 */
 @interface AppDelegate (SDK)
 
+/* 初始化DSDK */
 - (void)initSDK;
 
 @end

@@ -13,7 +13,6 @@
 #import "UIViewController+PopViewController.h"
 #import "UIViewController+PushViewController.h"
 #import "UIViewController+NavigationBarStatusBar.h"
-#import "UIViewController+NoticeView.h"
 
 #import "A_TableView.h"
 #import "A_TableViewCell.h"
@@ -63,6 +62,7 @@
 - (instancetype)initWithDelegate:(id<A_ViewControllerDelegate>)delegate parameter:(id)parameter {
     self = [super init];
     if (self) {
+#warning todo...init
         _delegate = delegate;
         _parameter = parameter;
     }
@@ -136,7 +136,7 @@
 
 - (void)private_get_module_A_DataFromServer {
     A_ServiceParameter *a_parameter = [[A_ServiceParameter alloc] initWithXXXId:@"" pageSize:0 pageNumber:0];
-    [A_Service getResourceDataServiceWithParameter:a_parameter completeHandle:^(A_ServiceResult * _Nonnull sourceCenterResult) {
+    [A_Service getResourceDataServiceWithParameter:a_parameter completeHandle:^(A_ServiceResult * _Nonnull result) {
 #warning todo...refresh UI
     } failure:^(NSError * _Nonnull error) {
         

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+/** 网络状态 */
 @interface HPNetworkStatus: NSObject
 
 - (bool)networkAvailable;
@@ -18,6 +19,7 @@
 
 @end
 
+/** 网络监控状态管理者 */
 @interface HPNetworkStatusManager : NSObject
 
 + (HPNetworkStatusManager *)manager;

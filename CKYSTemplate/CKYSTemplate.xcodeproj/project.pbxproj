@@ -48,6 +48,8 @@
 		2C4371C2219075CC000D0E54 /* A_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C43713E219075CC000D0E54 /* A_TableViewCell.m */; };
 		2C4371C8219080B9000D0E54 /* HPBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4371C7219080B9000D0E54 /* HPBaseItem.m */; };
 		2C4371CC21908288000D0E54 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4371CA21908288000D0E54 /* NSMutableDictionary+Safe.m */; };
+		2C4649B4219877C400F71BA1 /* CKSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4649B3219877C400F71BA1 /* CKSystem.m */; };
+		2C4649B7219877E800F71BA1 /* CKDefaultSystemImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4649B6219877E800F71BA1 /* CKDefaultSystemImp.m */; };
 		2C498C8A2140C4B70007DCBF /* HPNotificationPostCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C892140C4B70007DCBF /* HPNotificationPostCenter.m */; };
 		2C498C8D2140C54C0007DCBF /* HPNotificationObserverCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C8C2140C54C0007DCBF /* HPNotificationObserverCenter.m */; };
 		2C498C902140C69C0007DCBF /* HPDemoNotificationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C8F2140C69C0007DCBF /* HPDemoNotificationHelper.m */; };
@@ -65,6 +67,7 @@
 		2C5593002192A7000035C4EB /* A_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5592FF2192A7000035C4EB /* A_ViewController.m */; };
 		2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */; };
 		2CA4AE03213CB7F400E43798 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4AE02213CB7F400E43798 /* Images.xcassets */; };
+		2CAA499D21997F6A0072919D /* LoginServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA499C21997F6A0072919D /* LoginServiceManager.m */; };
 		2CACD0C5219564E200180412 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CACD0C4219564E200180412 /* NetworkService.m */; };
 		2CACD0C82195670D00180412 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CACD0C72195670D00180412 /* LoginService.m */; };
 		2CACD0CB2195677100180412 /* LoginServiceParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CACD0CA2195677100180412 /* LoginServiceParameter.m */; };
@@ -188,6 +191,10 @@
 		2C4371C7219080B9000D0E54 /* HPBaseItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPBaseItem.m; sourceTree = "<group>"; };
 		2C4371CA21908288000D0E54 /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
 		2C4371CB21908288000D0E54 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
+		2C4649B2219877C400F71BA1 /* CKSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKSystem.h; sourceTree = "<group>"; };
+		2C4649B3219877C400F71BA1 /* CKSystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKSystem.m; sourceTree = "<group>"; };
+		2C4649B5219877E800F71BA1 /* CKDefaultSystemImp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKDefaultSystemImp.h; sourceTree = "<group>"; };
+		2C4649B6219877E800F71BA1 /* CKDefaultSystemImp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKDefaultSystemImp.m; sourceTree = "<group>"; };
 		2C498C882140C4B70007DCBF /* HPNotificationPostCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPNotificationPostCenter.h; sourceTree = "<group>"; };
 		2C498C892140C4B70007DCBF /* HPNotificationPostCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPNotificationPostCenter.m; sourceTree = "<group>"; };
 		2C498C8B2140C54C0007DCBF /* HPNotificationObserverCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPNotificationObserverCenter.h; sourceTree = "<group>"; };
@@ -228,6 +235,9 @@
 		2C5BBF8F213FD0F000A1A6D0 /* CKAppSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAppSystemInfo.h; sourceTree = "<group>"; };
 		2C5BBF96213FD11500A1A6D0 /* RequestServiceResultToastConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestServiceResultToastConst.h; sourceTree = "<group>"; };
 		2CA4AE02213CB7F400E43798 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2CAA499B21997F6A0072919D /* LoginServiceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginServiceManager.h; sourceTree = "<group>"; };
+		2CAA499C21997F6A0072919D /* LoginServiceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginServiceManager.m; sourceTree = "<group>"; };
+		2CAA499E21997F870072919D /* LoginServiceManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginServiceManagerProtocol.h; sourceTree = "<group>"; };
 		2CACD0C3219564E200180412 /* NetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
 		2CACD0C4219564E200180412 /* NetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
 		2CACD0C62195670D00180412 /* LoginService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
@@ -731,6 +741,10 @@
 			children = (
 				2C5BBF8F213FD0F000A1A6D0 /* CKAppSystemInfo.h */,
 				2C5BBF8E213FD0F000A1A6D0 /* CKAppSystemInfo.m */,
+				2C4649B2219877C400F71BA1 /* CKSystem.h */,
+				2C4649B3219877C400F71BA1 /* CKSystem.m */,
+				2C4649B5219877E800F71BA1 /* CKDefaultSystemImp.h */,
+				2C4649B6219877E800F71BA1 /* CKDefaultSystemImp.m */,
 			);
 			path = "app(独立于framework和业务以及UI层,此类仅获取app信息版本号...原因在于此类所有app都是同一套逻辑和获取方式)";
 			sourceTree = "<group>";
@@ -836,6 +850,16 @@
 			path = "file(文件操作相关类,项目中所有文件操作都由此类完成方便调试)";
 			sourceTree = "<group>";
 		};
+		2CAA499A21997F470072919D /* login_service_manager */ = {
+			isa = PBXGroup;
+			children = (
+				2CAA499B21997F6A0072919D /* LoginServiceManager.h */,
+				2CAA499C21997F6A0072919D /* LoginServiceManager.m */,
+				2CAA499E21997F870072919D /* LoginServiceManagerProtocol.h */,
+			);
+			path = login_service_manager;
+			sourceTree = "<group>";
+		};
 		2CACD0B6219562DA00180412 /* LowLevelFramework */ = {
 			isa = PBXGroup;
 			children = (
@@ -894,6 +918,7 @@
 		2CACD0BF2195645D00180412 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				2CAA499A21997F470072919D /* login_service_manager */,
 				2CACD0C22195648400180412 /* login_helper */,
 				2CACD0C12195647C00180412 /* login_item */,
 				2CACD0C02195646C00180412 /* login_service */,
@@ -1137,6 +1162,7 @@
 				2C4371AF219075CC000D0E54 /* A_PlaceHolderView.m in Sources */,
 				2C4371BB219075CC000D0E54 /* A_UserInfoView.m in Sources */,
 				2C4371B7219075CC000D0E54 /* A_TableViewCell+SetLabelContentLayout.m in Sources */,
+				2C4649B4219877C400F71BA1 /* CKSystem.m in Sources */,
 				2C436FF121906698000D0E54 /* UILabel+Category.m in Sources */,
 				2C436FF7219066C5000D0E54 /* UIButton+SetTitleColorImage.m in Sources */,
 				2C498C902140C69C0007DCBF /* HPDemoNotificationHelper.m in Sources */,
@@ -1162,6 +1188,7 @@
 				2CACD0C82195670D00180412 /* LoginService.m in Sources */,
 				2C43700721906ECB000D0E54 /* AppDelegate+UI.m in Sources */,
 				2CACD0E6219588BF00180412 /* LoginDataItem.m in Sources */,
+				2CAA499D21997F6A0072919D /* LoginServiceManager.m in Sources */,
 				2C436FE22190651D000D0E54 /* NSNilObjectHelper.m in Sources */,
 				2CACD0D721957A7100180412 /* NetworkServiceItem.m in Sources */,
 				2C498D032140D9380007DCBF /* FileUtils.m in Sources */,
@@ -1174,6 +1201,7 @@
 				2C436FEE21906683000D0E54 /* UIViewController+NavigationBarStatusBar.m in Sources */,
 				2C4371B0219075CC000D0E54 /* A_TableView.m in Sources */,
 				2C498CA12140CC970007DCBF /* UIViewController+LoadingView.m in Sources */,
+				2C4649B7219877E800F71BA1 /* CKDefaultSystemImp.m in Sources */,
 				2C498CF92140D6160007DCBF /* HPDataEmptyView.m in Sources */,
 				2C4371BA219075CC000D0E54 /* A_TableViewCell+SetFooterViewLayout.m in Sources */,
 				2C1A9F1D20EE043E00E21FEA /* main.m in Sources */,

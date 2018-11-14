@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+/** NSUserDefault(plist操作相关类,项目中所有plist操作都由此类完成) */
 @interface UserDefaultCenter : NSObject
 
 + (nonnull UserDefaultCenter *)userDefaultCenter;

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+/** 文件操作相关类,项目中所有文件操作都由此类完成 */
 @interface FileUtils : NSObject
 
 + (BOOL)pathExists:(NSString *)path isDir:(BOOL *)isDir;

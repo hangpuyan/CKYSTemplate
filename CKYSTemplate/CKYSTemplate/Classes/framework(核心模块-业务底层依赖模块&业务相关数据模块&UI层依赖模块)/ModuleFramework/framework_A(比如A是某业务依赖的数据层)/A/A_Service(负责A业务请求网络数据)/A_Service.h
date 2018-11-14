@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface A_Service : NetworkService
 
-+ (void)getResourceDataServiceWithParameter:(A_ServiceParameter *)parameter completeHandle:(void(^)(A_ServiceResult *sourceCenterResult))completeHandle failure:(void(^)(NSError *error))failure;
++ (void)getResourceDataServiceWithParameter:(A_ServiceParameter *)parameter completeHandle:(void(^)(A_ServiceResult *result))completeHandle failure:(void(^)(NSError *error))failure;
 
 @end 
 

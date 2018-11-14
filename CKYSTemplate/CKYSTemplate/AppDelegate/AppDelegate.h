@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+/** 请保证 AppDelegate中代码在300行之内！阿门！谢谢！ */
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

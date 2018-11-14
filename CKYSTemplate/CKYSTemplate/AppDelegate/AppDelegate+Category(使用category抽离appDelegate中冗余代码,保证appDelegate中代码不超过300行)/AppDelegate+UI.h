@@ -10,8 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/** 初始化UI 分类 */
 @interface AppDelegate (UI)
 
+/** 初始化UI */
 - (void)initRootViewController;
 
 @end

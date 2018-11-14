@@ -16,7 +16,7 @@
 
 #define A_SERVICE_URL @""
 
-+ (void)getResourceDataServiceWithParameter:(A_ServiceParameter *)parameter completeHandle:(void(^)(A_ServiceResult *sourceCenterResult))completeHandle failure:(void(^)(NSError *error))failure {
++ (void)getResourceDataServiceWithParameter:(A_ServiceParameter *)parameter completeHandle:(void(^)(A_ServiceResult *result))completeHandle failure:(void(^)(NSError *error))failure {
     
     NSString *A_SERVICE_URL_STRING = [NSString stringWithFormat:@"%@%@",ROOT_URL,A_SERVICE_URL];
     
