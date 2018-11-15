@@ -67,6 +67,8 @@
 		2C5252FD219D3DB000DA1353 /* CKOrderListServiceTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252FC219D3DAF00DA1353 /* CKOrderListServiceTable.m */; };
 		2C525300219D3DCC00DA1353 /* CKOrderListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252FF219D3DCC00DA1353 /* CKOrderListItem.m */; };
 		2C525304219D42A000DA1353 /* ANFMDBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C525302219D42A000DA1353 /* ANFMDBUtils.m */; };
+		2C525309219D495800DA1353 /* CKKeyedArchiverHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C525308219D495800DA1353 /* CKKeyedArchiverHelper.m */; };
+		2C52530C219D5B4700DA1353 /* DocumentDirectoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C52530B219D5B4700DA1353 /* DocumentDirectoryHelper.m */; };
 		2C5321582195A44600C57437 /* 通知使用说明.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C5321572195A44600C57437 /* 通知使用说明.md */; };
 		2C53215A2195A94400C57437 /* 网络状态监控使用说明.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C5321592195A94400C57437 /* 网络状态监控使用说明.md */; };
 		2C5593002192A7000035C4EB /* A_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5592FF2192A7000035C4EB /* A_ViewController.m */; };
@@ -243,6 +245,10 @@
 		2C525301219D3DE400DA1353 /* CKOrderListServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKOrderListServiceProtocol.h; sourceTree = "<group>"; };
 		2C525302219D42A000DA1353 /* ANFMDBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANFMDBUtils.m; sourceTree = "<group>"; };
 		2C525303219D42A000DA1353 /* ANFMDBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANFMDBUtils.h; sourceTree = "<group>"; };
+		2C525307219D495800DA1353 /* CKKeyedArchiverHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKKeyedArchiverHelper.h; sourceTree = "<group>"; };
+		2C525308219D495800DA1353 /* CKKeyedArchiverHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKKeyedArchiverHelper.m; sourceTree = "<group>"; };
+		2C52530A219D5B4700DA1353 /* DocumentDirectoryHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDirectoryHelper.h; sourceTree = "<group>"; };
+		2C52530B219D5B4700DA1353 /* DocumentDirectoryHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDirectoryHelper.m; sourceTree = "<group>"; };
 		2C5321572195A44600C57437 /* 通知使用说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "通知使用说明.md"; sourceTree = "<group>"; };
 		2C5321592195A94400C57437 /* 网络状态监控使用说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "网络状态监控使用说明.md"; sourceTree = "<group>"; };
 		2C5592FE2192A7000035C4EB /* A_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A_ViewController.h; sourceTree = "<group>"; };
@@ -746,6 +752,15 @@
 			path = DBOrderListDemo;
 			sourceTree = "<group>";
 		};
+		2C525306219D491200DA1353 /* KeyedArchiver */ = {
+			isa = PBXGroup;
+			children = (
+				2C525307219D495800DA1353 /* CKKeyedArchiverHelper.h */,
+				2C525308219D495800DA1353 /* CKKeyedArchiverHelper.m */,
+			);
+			path = KeyedArchiver;
+			sourceTree = "<group>";
+		};
 		2C5593042192B1190035C4EB /* Obj+Nil(判断一个字符串或者对象是否为空) */ = {
 			isa = PBXGroup;
 			children = (
@@ -887,6 +902,8 @@
 			children = (
 				2C498D012140D9380007DCBF /* FileUtils.h */,
 				2C498D022140D9380007DCBF /* FileUtils.m */,
+				2C52530A219D5B4700DA1353 /* DocumentDirectoryHelper.h */,
+				2C52530B219D5B4700DA1353 /* DocumentDirectoryHelper.m */,
 			);
 			path = "file(文件操作相关类,项目中所有文件操作都由此类完成方便调试)";
 			sourceTree = "<group>";
@@ -904,6 +921,7 @@
 		2CACD0B6219562DA00180412 /* LowLevelFramework */ = {
 			isa = PBXGroup;
 			children = (
+				2C525306219D491200DA1353 /* KeyedArchiver */,
 				2C5BBF9C213FD29300A1A6D0 /* NSUserDefault(plist操作相关类,项目中所有plist操作都由此类完成方便调试) */,
 				2CACD0BE2195639C00180412 /* DBUnit */,
 				2CACD0BD2195639300180412 /* FileUnit */,
@@ -955,9 +973,9 @@
 		2CACD0BE2195639C00180412 /* DBUnit */ = {
 			isa = PBXGroup;
 			children = (
-				2C525305219D437F00DA1353 /* DBOrderListDemo */,
 				2C525303219D42A000DA1353 /* ANFMDBUtils.h */,
 				2C525302219D42A000DA1353 /* ANFMDBUtils.m */,
+				2C525305219D437F00DA1353 /* DBOrderListDemo */,
 			);
 			path = DBUnit;
 			sourceTree = "<group>";
@@ -1198,6 +1216,7 @@
 				2C437154219075CC000D0E54 /* PHPhotoLibraryHelper.m in Sources */,
 				2C5593002192A7000035C4EB /* A_ViewController.m in Sources */,
 				2C43715A219075CC000D0E54 /* A_Service.m in Sources */,
+				2C525309219D495800DA1353 /* CKKeyedArchiverHelper.m in Sources */,
 				2C4371BE219075CC000D0E54 /* A_CellFooterView.m in Sources */,
 				2C43719E219075CC000D0E54 /* UIViewController+NavLeftItemBack.m in Sources */,
 				2C498CB92140CD410007DCBF /* HPSearchItem.m in Sources */,
@@ -1257,6 +1276,7 @@
 				2C498CF92140D6160007DCBF /* HPDataEmptyView.m in Sources */,
 				2C4371BA219075CC000D0E54 /* A_TableViewCell+SetFooterViewLayout.m in Sources */,
 				2C1A9F1D20EE043E00E21FEA /* main.m in Sources */,
+				2C52530C219D5B4700DA1353 /* DocumentDirectoryHelper.m in Sources */,
 				2C1A9F0F20EE043E00E21FEA /* AppDelegate.m in Sources */,
 				2C498C8D2140C54C0007DCBF /* HPNotificationObserverCenter.m in Sources */,
 				2C437155219075CC000D0E54 /* A_ServiceResult.m in Sources */,
