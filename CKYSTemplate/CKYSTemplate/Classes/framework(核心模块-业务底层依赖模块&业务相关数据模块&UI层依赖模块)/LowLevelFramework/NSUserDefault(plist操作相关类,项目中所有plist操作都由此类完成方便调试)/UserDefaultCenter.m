@@ -20,7 +20,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        self.userDefaultCenter = [NSUserDefaults standardUserDefaults];
+        _userDefaultCenter = [NSUserDefaults standardUserDefaults];
     }
     return self;
 }
@@ -28,9 +28,8 @@
 + (UserDefaultCenter *)userDefaultCenter {
     static UserDefaultCenter *center = nil;
     static dispatch_once_t onceToken;
-    
     dispatch_once(&onceToken, ^{
-        center = [[self alloc] init];
+        center = [[UserDefaultCenter alloc] init];
     });
     return center;
 }

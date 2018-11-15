@@ -99,11 +99,7 @@ enum{
 #define HP_SCREEN_HEIGHT_IPHONE_6P 736
 
 - (HPNetworkStatus *)currentNetworkStatus {
-    if ([UIScreen mainScreen].bounds.size.height>HP_SCREEN_HEIGHT_IPHONE_6P || ![NSThread isMainThread]) {
-        return [[HPNetworkStatus alloc] initWithNetStatus:[self.class networkingStatusFromReachability]];
-    } else {
-        return [[HPNetworkStatus alloc] initWithNetStatus:[self.class networkingStatusFromStatebar]];
-    }
+    return [[HPNetworkStatus alloc] initWithNetStatus:[self.class networkingStatusFromReachability]];
 }
 
 - (void)registerNetworkChangeListener:(id)obj sel:(SEL)sel {

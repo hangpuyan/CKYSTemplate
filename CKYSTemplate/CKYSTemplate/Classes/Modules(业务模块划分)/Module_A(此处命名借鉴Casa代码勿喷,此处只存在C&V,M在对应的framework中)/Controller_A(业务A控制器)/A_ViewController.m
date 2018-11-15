@@ -102,7 +102,7 @@
         
     }
     //获取当前网络状态
-    HPNetworkStatus *currentNetworkStatus = [HPNetworkStatusManager manager].currentHPNetworkStatus;
+    HPNetworkStatus *currentNetworkStatus = [HPNetworkStatusManager manager].currentNetworkStatus;
 }
 
 #pragma mark - 模拟登录成功

@@ -27,7 +27,7 @@
 - (void)registerNetworkChangeListener:(id)obj sel:(SEL)sel;
 - (void)unRegisterNetworkChangeListener:(id)obj;
 
-- (HPNetworkStatus *)currentHPNetworkStatus;
+- (HPNetworkStatus *)currentNetworkStatus;
 
 @end
 
