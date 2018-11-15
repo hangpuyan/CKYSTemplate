@@ -34,8 +34,9 @@
 }
 
 - (id)unArchiver {
+    __block id data;
     @synchronized (self) {
-      id data = [NSKeyedUnarchiver unarchiveObjectWithFile:_filePath];
+      data = [NSKeyedUnarchiver unarchiveObjectWithFile:_filePath];
     }
     return data;
 }
