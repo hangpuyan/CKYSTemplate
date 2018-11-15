@@ -14,6 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol LoginServiceManagerProtocol <NSObject>
 
+@optional
+
+@required
+
 @end
 
 NS_ASSUME_NONNULL_END

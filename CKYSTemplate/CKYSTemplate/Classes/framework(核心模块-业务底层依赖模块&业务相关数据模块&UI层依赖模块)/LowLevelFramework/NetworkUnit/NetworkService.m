@@ -12,7 +12,7 @@
 @implementation NetworkService
 
 + (void)getRequestServerWithUrl:(NSString *)url parameter:(NSDictionary *)parameter completeHandle:(void(^)(id result))completeHandle failure:(void(^)(NSError *error))failure {
-    [[self shareHttpSessionManager] GET:url parameters:parameter progress:^(NSProgress * _Nonnull downloadProgress) {
+    [[[self shareHttpSessionManager] GET:url parameters:parameter progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (completeHandle) {
@@ -22,11 +22,11 @@
         if (failure) {
             failure(error);
         }
-    }];
+    }] resume];
 }
 
 + (void)postRequestServerWithUrl:(NSString *)url parameter:(NSDictionary *)parameter completeHandle:(void(^)(id result))completeHandle failure:(void(^)(NSError *error))failure {
-    [[self shareHttpSessionManager] POST:url parameters:parameter progress:^(NSProgress * _Nonnull uploadProgress) {
+    [[[self shareHttpSessionManager] POST:url parameters:parameter progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (completeHandle) {
@@ -36,12 +36,12 @@
         if (failure) {
             failure(error);
         }
-    }];
+    }] resume];
 }
 
-static AFHTTPSessionManager *httpSessionManager;
-
 #define HTTP_REQUEST_TIMEOUT_CONST 10
+
+static AFHTTPSessionManager *httpSessionManager;
 
 + (AFHTTPSessionManager *)shareHttpSessionManager {
     static dispatch_once_t onceToken;
@@ -56,6 +56,5 @@ static AFHTTPSessionManager *httpSessionManager;
     });
     return httpSessionManager;
 }
-
 
 @end

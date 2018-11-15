@@ -11,9 +11,9 @@ target 'CKYSTemplate' do
 #      #上下拉刷新
 #      pod 'MJRefresh'
 #      #autoLyout 布局
-#      pod 'Masonry', '~> 1.1.0’
+      pod 'Masonry', '~> 1.1.0’
 #      #UI costum self
-#      pod 'UIButtonUnit'
+      pod 'UIButtonUnit'
 #      #数据解析
 #      pod 'MJExtension'
 #      #地图

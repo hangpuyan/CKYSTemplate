@@ -9,6 +9,8 @@
 #ifndef NetworkDNSConst_h
 #define NetworkDNSConst_h
 
+//release 和 debug 域名切换
+
 #if DEBUG
 
 #define ROOT_URL @""

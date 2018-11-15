@@ -918,10 +918,10 @@
 		2CACD0BF2195645D00180412 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				2CAA499A21997F470072919D /* login_service_manager */,
 				2CACD0C22195648400180412 /* login_helper */,
 				2CACD0C12195647C00180412 /* login_item */,
 				2CACD0C02195646C00180412 /* login_service */,
+				2CAA499A21997F470072919D /* login_service_manager */,
 			);
 			path = Login;
 			sourceTree = "<group>";

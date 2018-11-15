@@ -77,6 +77,7 @@
     [self private_get_module_A_DataFromServer];
     [[HPNetworkStatusManager manager] registerNetworkChangeListener:self sel:@selector(private_netWorkStatusChangedMontor:)];
     [LoginNotificationHelper registerLoginSuccessNotificationObserver:self selector:@selector(private_notificationLoginSuccess) object:nil];
+    [self private_loginAction];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
