@@ -62,7 +62,7 @@
 		2C498D062140DB4E0007DCBF /* UserDefaultCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D052140DB4D0007DCBF /* UserDefaultCenter.m */; };
 		2C498D172141003D0007DCBF /* HPNetworkStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D162141003D0007DCBF /* HPNetworkStatusManager.m */; };
 		2C498D1A214100950007DCBF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D19214100950007DCBF /* Reachability.m */; };
-		2C5252F0219D264500DA1353 /* CKSundriesCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252EF219D264500DA1353 /* CKSundriesCenter.m */; };
+		2C5252F7219D298800DA1353 /* CKSundriesCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252F5219D298800DA1353 /* CKSundriesCenter.m */; };
 		2C5321582195A44600C57437 /* 通知使用说明.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C5321572195A44600C57437 /* 通知使用说明.md */; };
 		2C53215A2195A94400C57437 /* 网络状态监控使用说明.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C5321592195A94400C57437 /* 网络状态监控使用说明.md */; };
 		2C5593002192A7000035C4EB /* A_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5592FF2192A7000035C4EB /* A_ViewController.m */; };
@@ -228,8 +228,8 @@
 		2C498D19214100950007DCBF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		2C5252E0219D24E600DA1353 /* RGBColorConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBColorConst.h; sourceTree = "<group>"; };
 		2C5252E1219D250C00DA1353 /* SystemFontConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemFontConst.h; sourceTree = "<group>"; };
-		2C5252EE219D264500DA1353 /* CKSundriesCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSundriesCenter.h; sourceTree = "<group>"; };
-		2C5252EF219D264500DA1353 /* CKSundriesCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSundriesCenter.m; sourceTree = "<group>"; };
+		2C5252F5219D298800DA1353 /* CKSundriesCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSundriesCenter.m; sourceTree = "<group>"; };
+		2C5252F6219D298800DA1353 /* CKSundriesCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSundriesCenter.h; sourceTree = "<group>"; };
 		2C5321572195A44600C57437 /* 通知使用说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "通知使用说明.md"; sourceTree = "<group>"; };
 		2C5321592195A94400C57437 /* 网络状态监控使用说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "网络状态监控使用说明.md"; sourceTree = "<group>"; };
 		2C5592FE2192A7000035C4EB /* A_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A_ViewController.h; sourceTree = "<group>"; };
@@ -710,14 +710,13 @@
 			path = "DataEmptyView(空页面占位UI)";
 			sourceTree = "<group>";
 		};
-		2C5252E4219D261300DA1353 /* SundriesCenter(任务派发) */ = {
+		2C5252F4219D298800DA1353 /* SundriesCenter(任务派发) */ = {
 			isa = PBXGroup;
 			children = (
-				2C5252EE219D264500DA1353 /* CKSundriesCenter.h */,
-				2C5252EF219D264500DA1353 /* CKSundriesCenter.m */,
+				2C5252F5219D298800DA1353 /* CKSundriesCenter.m */,
+				2C5252F6219D298800DA1353 /* CKSundriesCenter.h */,
 			);
-			name = "SundriesCenter(任务派发)";
-			path = "../../../../../../../../蘑菇街/ios/TeamTalk/Util/SundriesCenter(任务派发)";
+			path = "SundriesCenter(任务派发)";
 			sourceTree = "<group>";
 		};
 		2C5593042192B1190035C4EB /* Obj+Nil(判断一个字符串或者对象是否为空) */ = {
@@ -794,7 +793,7 @@
 		2C5BBF8C213FCD9600A1A6D0 /* threading(多线程派发) */ = {
 			isa = PBXGroup;
 			children = (
-				2C5252E4219D261300DA1353 /* SundriesCenter(任务派发) */,
+				2C5252F4219D298800DA1353 /* SundriesCenter(任务派发) */,
 			);
 			path = "threading(多线程派发)";
 			sourceTree = "<group>";
@@ -1174,7 +1173,6 @@
 				2C498CB92140CD410007DCBF /* HPSearchItem.m in Sources */,
 				2C43719F219075CC000D0E54 /* UIViewController+NavBarRightItemCancel.m in Sources */,
 				2CACD0CE219567B400180412 /* LoginServiceResult.m in Sources */,
-				2C5252F0219D264500DA1353 /* CKSundriesCenter.m in Sources */,
 				2CACD0C5219564E200180412 /* NetworkService.m in Sources */,
 				2C4371B9219075CC000D0E54 /* A_TableViewCell+SetVideoViewLayout.m in Sources */,
 				2C498CA42140CC970007DCBF /* UIViewController+SearchItem.m in Sources */,
@@ -1207,6 +1205,7 @@
 				2CACD0C82195670D00180412 /* LoginService.m in Sources */,
 				2C43700721906ECB000D0E54 /* AppDelegate+UI.m in Sources */,
 				2CACD0E6219588BF00180412 /* LoginDataItem.m in Sources */,
+				2C5252F7219D298800DA1353 /* CKSundriesCenter.m in Sources */,
 				2CAA499D21997F6A0072919D /* LoginServiceManager.m in Sources */,
 				2C436FE22190651D000D0E54 /* NSNilObjectHelper.m in Sources */,
 				2CACD0D721957A7100180412 /* NetworkServiceItem.m in Sources */,
