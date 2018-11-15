@@ -63,6 +63,10 @@
 		2C498D172141003D0007DCBF /* HPNetworkStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D162141003D0007DCBF /* HPNetworkStatusManager.m */; };
 		2C498D1A214100950007DCBF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D19214100950007DCBF /* Reachability.m */; };
 		2C5252F7219D298800DA1353 /* CKSundriesCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252F5219D298800DA1353 /* CKSundriesCenter.m */; };
+		2C5252FA219D3D8600DA1353 /* CKOrderListService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252F9219D3D8600DA1353 /* CKOrderListService.m */; };
+		2C5252FD219D3DB000DA1353 /* CKOrderListServiceTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252FC219D3DAF00DA1353 /* CKOrderListServiceTable.m */; };
+		2C525300219D3DCC00DA1353 /* CKOrderListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252FF219D3DCC00DA1353 /* CKOrderListItem.m */; };
+		2C525304219D42A000DA1353 /* ANFMDBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C525302219D42A000DA1353 /* ANFMDBUtils.m */; };
 		2C5321582195A44600C57437 /* 通知使用说明.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C5321572195A44600C57437 /* 通知使用说明.md */; };
 		2C53215A2195A94400C57437 /* 网络状态监控使用说明.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C5321592195A94400C57437 /* 网络状态监控使用说明.md */; };
 		2C5593002192A7000035C4EB /* A_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5592FF2192A7000035C4EB /* A_ViewController.m */; };
@@ -230,6 +234,15 @@
 		2C5252E1219D250C00DA1353 /* SystemFontConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemFontConst.h; sourceTree = "<group>"; };
 		2C5252F5219D298800DA1353 /* CKSundriesCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSundriesCenter.m; sourceTree = "<group>"; };
 		2C5252F6219D298800DA1353 /* CKSundriesCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSundriesCenter.h; sourceTree = "<group>"; };
+		2C5252F8219D3D8600DA1353 /* CKOrderListService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKOrderListService.h; sourceTree = "<group>"; };
+		2C5252F9219D3D8600DA1353 /* CKOrderListService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKOrderListService.m; sourceTree = "<group>"; };
+		2C5252FB219D3DAF00DA1353 /* CKOrderListServiceTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKOrderListServiceTable.h; sourceTree = "<group>"; };
+		2C5252FC219D3DAF00DA1353 /* CKOrderListServiceTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKOrderListServiceTable.m; sourceTree = "<group>"; };
+		2C5252FE219D3DCC00DA1353 /* CKOrderListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKOrderListItem.h; sourceTree = "<group>"; };
+		2C5252FF219D3DCC00DA1353 /* CKOrderListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKOrderListItem.m; sourceTree = "<group>"; };
+		2C525301219D3DE400DA1353 /* CKOrderListServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKOrderListServiceProtocol.h; sourceTree = "<group>"; };
+		2C525302219D42A000DA1353 /* ANFMDBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANFMDBUtils.m; sourceTree = "<group>"; };
+		2C525303219D42A000DA1353 /* ANFMDBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANFMDBUtils.h; sourceTree = "<group>"; };
 		2C5321572195A44600C57437 /* 通知使用说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "通知使用说明.md"; sourceTree = "<group>"; };
 		2C5321592195A94400C57437 /* 网络状态监控使用说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "网络状态监控使用说明.md"; sourceTree = "<group>"; };
 		2C5592FE2192A7000035C4EB /* A_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A_ViewController.h; sourceTree = "<group>"; };
@@ -713,10 +726,24 @@
 		2C5252F4219D298800DA1353 /* SundriesCenter(任务派发) */ = {
 			isa = PBXGroup;
 			children = (
-				2C5252F5219D298800DA1353 /* CKSundriesCenter.m */,
 				2C5252F6219D298800DA1353 /* CKSundriesCenter.h */,
+				2C5252F5219D298800DA1353 /* CKSundriesCenter.m */,
 			);
 			path = "SundriesCenter(任务派发)";
+			sourceTree = "<group>";
+		};
+		2C525305219D437F00DA1353 /* DBOrderListDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2C525301219D3DE400DA1353 /* CKOrderListServiceProtocol.h */,
+				2C5252F8219D3D8600DA1353 /* CKOrderListService.h */,
+				2C5252F9219D3D8600DA1353 /* CKOrderListService.m */,
+				2C5252FB219D3DAF00DA1353 /* CKOrderListServiceTable.h */,
+				2C5252FC219D3DAF00DA1353 /* CKOrderListServiceTable.m */,
+				2C5252FE219D3DCC00DA1353 /* CKOrderListItem.h */,
+				2C5252FF219D3DCC00DA1353 /* CKOrderListItem.m */,
+			);
+			path = DBOrderListDemo;
 			sourceTree = "<group>";
 		};
 		2C5593042192B1190035C4EB /* Obj+Nil(判断一个字符串或者对象是否为空) */ = {
@@ -928,6 +955,9 @@
 		2CACD0BE2195639C00180412 /* DBUnit */ = {
 			isa = PBXGroup;
 			children = (
+				2C525305219D437F00DA1353 /* DBOrderListDemo */,
+				2C525303219D42A000DA1353 /* ANFMDBUtils.h */,
+				2C525302219D42A000DA1353 /* ANFMDBUtils.m */,
 			);
 			path = DBUnit;
 			sourceTree = "<group>";
@@ -1172,6 +1202,7 @@
 				2C43719E219075CC000D0E54 /* UIViewController+NavLeftItemBack.m in Sources */,
 				2C498CB92140CD410007DCBF /* HPSearchItem.m in Sources */,
 				2C43719F219075CC000D0E54 /* UIViewController+NavBarRightItemCancel.m in Sources */,
+				2C5252FD219D3DB000DA1353 /* CKOrderListServiceTable.m in Sources */,
 				2CACD0CE219567B400180412 /* LoginServiceResult.m in Sources */,
 				2CACD0C5219564E200180412 /* NetworkService.m in Sources */,
 				2C4371B9219075CC000D0E54 /* A_TableViewCell+SetVideoViewLayout.m in Sources */,
@@ -1186,6 +1217,7 @@
 				2C436FED21906683000D0E54 /* UIViewController+NavigationBarHidden.m in Sources */,
 				2C4371BD219075CC000D0E54 /* A_ImageCollectionViewHelper.m in Sources */,
 				2C4371C0219075CC000D0E54 /* A_ImageCollectionView.m in Sources */,
+				2C525300219D3DCC00DA1353 /* CKOrderListItem.m in Sources */,
 				2C436FF4219066AD000D0E54 /* UIView+Category.m in Sources */,
 				2C4371BC219075CC000D0E54 /* A_ImageCollectionViewCell.m in Sources */,
 				2CACD0D1219567CE00180412 /* NetworkServiceResult.m in Sources */,
@@ -1200,6 +1232,7 @@
 				2C498D1A214100950007DCBF /* Reachability.m in Sources */,
 				2CACD0DA2195854C00180412 /* LoginNotificationHelper.m in Sources */,
 				2C4371CC21908288000D0E54 /* NSMutableDictionary+Safe.m in Sources */,
+				2C5252FA219D3D8600DA1353 /* CKOrderListService.m in Sources */,
 				2CACD0DD219585A900180412 /* LogoutNotificationHelper.m in Sources */,
 				2C43715B219075CC000D0E54 /* A_ServiceParameter.m in Sources */,
 				2CACD0C82195670D00180412 /* LoginService.m in Sources */,
@@ -1214,6 +1247,7 @@
 				2C4371C8219080B9000D0E54 /* HPBaseItem.m in Sources */,
 				2C43701421907102000D0E54 /* HPSDKInitManager.m in Sources */,
 				2C498C8A2140C4B70007DCBF /* HPNotificationPostCenter.m in Sources */,
+				2C525304219D42A000DA1353 /* ANFMDBUtils.m in Sources */,
 				2C498CF82140D6160007DCBF /* HPPlaceHolderView.m in Sources */,
 				2C437172219075CC000D0E54 /* HPAReleaseProtocolHelper.m in Sources */,
 				2C436FEE21906683000D0E54 /* UIViewController+NavigationBarStatusBar.m in Sources */,

@@ -8,12 +8,12 @@ typedef void(^CKTask)();
 @interface CKSundriesCenter : NSObject
 
 /** 串行队列 */
-@property (nonatomic,readonly)dispatch_queue_t serialQueue;
+@property (nonatomic, readonly) dispatch_queue_t serialQueue;
 
 /** 并发队列 */
-@property (nonatomic,readonly)dispatch_queue_t parallelQueue;
+@property (nonatomic, readonly) dispatch_queue_t parallelQueue;
 
-+ (instancetype)instance;
++ (instancetype)shareInstance;
 
 - (void)pushTaskToSerialQueue:(CKTask)task;
 

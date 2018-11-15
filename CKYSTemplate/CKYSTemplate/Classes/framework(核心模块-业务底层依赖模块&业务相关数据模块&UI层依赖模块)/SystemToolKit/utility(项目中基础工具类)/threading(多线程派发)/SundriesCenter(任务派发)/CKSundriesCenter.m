@@ -10,13 +10,13 @@
 
 @implementation CKSundriesCenter
 
-+ (instancetype)instance {
-    static CKSundriesCenter* g_CKSundriesCenter;
++ (instancetype)shareInstance {
+    static CKSundriesCenter* global_CKSundriesCenter;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        g_CKSundriesCenter = [[CKSundriesCenter alloc] init];
+        global_CKSundriesCenter = [[CKSundriesCenter alloc] init];
     });
-    return g_CKSundriesCenter;
+    return global_CKSundriesCenter;
 }
 
 - (id)init {
