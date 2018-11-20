@@ -64,6 +64,8 @@
 		2C49978221A3B2CE00A8040E /* UIButton+SetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49977921A3B2CE00A8040E /* UIButton+SetImage.m */; };
 		2C49978321A3B2CE00A8040E /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49977B21A3B2CE00A8040E /* UIView+Category.m */; };
 		2C49978421A3B2CE00A8040E /* UIImageView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49977E21A3B2CE00A8040E /* UIImageView+Category.m */; };
+		2C4997DA21A3D8B600A8040E /* CKYSDeviceInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4997D421A3D8B600A8040E /* CKYSDeviceInfoHelper.m */; };
+		2C4997DB21A3D8B600A8040E /* CKYSDeviceTypeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4997D521A3D8B600A8040E /* CKYSDeviceTypeInfo.m */; };
 		2C5252F7219D298800DA1353 /* CKSundriesCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252F5219D298800DA1353 /* CKSundriesCenter.m */; };
 		2C5252FA219D3D8600DA1353 /* CKOrderListService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252F9219D3D8600DA1353 /* CKOrderListService.m */; };
 		2C5252FD219D3DB000DA1353 /* CKOrderListServiceTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252FC219D3DAF00DA1353 /* CKOrderListServiceTable.m */; };
@@ -238,6 +240,12 @@
 		2C49977C21A3B2CE00A8040E /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
 		2C49977E21A3B2CE00A8040E /* UIImageView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Category.m"; sourceTree = "<group>"; };
 		2C49977F21A3B2CE00A8040E /* UIImageView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Category.h"; sourceTree = "<group>"; };
+		2C4997D421A3D8B600A8040E /* CKYSDeviceInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKYSDeviceInfoHelper.m; sourceTree = "<group>"; };
+		2C4997D521A3D8B600A8040E /* CKYSDeviceTypeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKYSDeviceTypeInfo.m; sourceTree = "<group>"; };
+		2C4997D621A3D8B600A8040E /* CKYSDeviceTypeInfoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSDeviceTypeInfoProtocol.h; sourceTree = "<group>"; };
+		2C4997D721A3D8B600A8040E /* CKYSDeviceInfoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSDeviceInfoHelper.h; sourceTree = "<group>"; };
+		2C4997D821A3D8B600A8040E /* CKYSDeviceInfoHelperProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSDeviceInfoHelperProtocol.h; sourceTree = "<group>"; };
+		2C4997D921A3D8B600A8040E /* CKYSDeviceTypeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSDeviceTypeInfo.h; sourceTree = "<group>"; };
 		2C5252E0219D24E600DA1353 /* RGBColorConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBColorConst.h; sourceTree = "<group>"; };
 		2C5252E1219D250C00DA1353 /* SystemFontConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemFontConst.h; sourceTree = "<group>"; };
 		2C5252F5219D298800DA1353 /* CKSundriesCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSundriesCenter.m; sourceTree = "<group>"; };
@@ -689,6 +697,7 @@
 		2C498CEF2140CF3A0007DCBF /* NS(数据处理相关分类) */ = {
 			isa = PBXGroup;
 			children = (
+				2C4997D321A3D8B600A8040E /* DeviceHelper(获取设备信息-系统版本|设备类型) */,
 				2C5593042192B1190035C4EB /* Obj+Nil(判断一个字符串或者对象是否为空) */,
 				2C4371C921908288000D0E54 /* Dict+Safe(字典在填充value时进行安全判断防止crash) */,
 			);
@@ -753,6 +762,19 @@
 				2C49977E21A3B2CE00A8040E /* UIImageView+Category.m */,
 			);
 			path = "UIImageView(类工厂方法初始化一个UIImageView)";
+			sourceTree = "<group>";
+		};
+		2C4997D321A3D8B600A8040E /* DeviceHelper(获取设备信息-系统版本|设备类型) */ = {
+			isa = PBXGroup;
+			children = (
+				2C4997D821A3D8B600A8040E /* CKYSDeviceInfoHelperProtocol.h */,
+				2C4997D721A3D8B600A8040E /* CKYSDeviceInfoHelper.h */,
+				2C4997D421A3D8B600A8040E /* CKYSDeviceInfoHelper.m */,
+				2C4997D621A3D8B600A8040E /* CKYSDeviceTypeInfoProtocol.h */,
+				2C4997D921A3D8B600A8040E /* CKYSDeviceTypeInfo.h */,
+				2C4997D521A3D8B600A8040E /* CKYSDeviceTypeInfo.m */,
+			);
+			path = "DeviceHelper(获取设备信息-系统版本|设备类型)";
 			sourceTree = "<group>";
 		};
 		2C5252F4219D298800DA1353 /* SundriesCenter(任务派发) */ = {
@@ -1283,6 +1305,7 @@
 				2C43715B219075CC000D0E54 /* A_ServiceParameter.m in Sources */,
 				2CACD0C82195670D00180412 /* LoginService.m in Sources */,
 				2C43700721906ECB000D0E54 /* AppDelegate+UI.m in Sources */,
+				2C4997DA21A3D8B600A8040E /* CKYSDeviceInfoHelper.m in Sources */,
 				2CACD0E6219588BF00180412 /* LoginDataItem.m in Sources */,
 				2C5252F7219D298800DA1353 /* CKSundriesCenter.m in Sources */,
 				2CAA499D21997F6A0072919D /* LoginServiceManager.m in Sources */,
@@ -1306,6 +1329,7 @@
 				2C52530C219D5B4700DA1353 /* DocumentDirectoryHelper.m in Sources */,
 				2C1A9F0F20EE043E00E21FEA /* AppDelegate.m in Sources */,
 				2C49978221A3B2CE00A8040E /* UIButton+SetImage.m in Sources */,
+				2C4997DB21A3D8B600A8040E /* CKYSDeviceTypeInfo.m in Sources */,
 				2C498C8D2140C54C0007DCBF /* HPNotificationObserverCenter.m in Sources */,
 				2C437155219075CC000D0E54 /* A_ServiceResult.m in Sources */,
 				2C4371C2219075CC000D0E54 /* A_TableViewCell.m in Sources */,
