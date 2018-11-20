@@ -1,22 +1,14 @@
 //
-//  UIButton+SetTitleColorImage.m
-//  CKYSPlatform
+//  UIButton+SetImage.m
+//  UISystemFramework
 //
-//  Created by Yan on 2018/10/16.
-//  Copyright © 2018 ckys. All rights reserved.
+//  Created by Yan on 2018/11/20.
+//  Copyright © 2018 YY. All rights reserved.
 //
 
-#import "UIButton+SetTitleColorImage.h"
+#import "UIButton+SetImage.h"
 
-@implementation UIButton (SetTitleColorImage)
-
-- (void)setTitle:(NSString *)aTitle titleFont:(CGFloat)aTitleFont titleColorNormal:(UIColor *)aTitleColorNormal titleColorHilight:(UIColor *)aTitleColorHilight titleColorDisable:(UIColor *)aTitleColorDisable {
-    [self setTitle:aTitle forState:UIControlStateNormal];
-    self.titleLabel.font = [UIFont systemFontOfSize:aTitleFont];
-    [self setTitleColor:aTitleColorNormal forState:UIControlStateNormal];
-    [self setTitleColor:aTitleColorHilight forState:UIControlStateHighlighted];
-    [self setTitleColor:aTitleColorDisable forState:UIControlStateDisabled];
-}
+@implementation UIButton (SetImage)
 
 - (void)setBackgroundImageNormal:(NSString *)aBGImageNormal backgroundImageHilight:(NSString *)aBGImageHilight backgroundImageDisable:(NSString *)aBGImageDisable {
     if (aBGImageNormal.length) {

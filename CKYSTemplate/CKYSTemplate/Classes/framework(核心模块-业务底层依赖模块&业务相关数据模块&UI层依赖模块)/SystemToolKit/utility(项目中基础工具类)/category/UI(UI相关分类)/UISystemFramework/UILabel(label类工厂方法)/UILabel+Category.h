@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+/** 类工厂方式创建UILabel */
 @interface UILabel (Category)
 
 /**
@@ -25,7 +26,7 @@
 + (UILabel *)labelWithTitle:(NSString *)title titleFont:(CGFloat)font backgroundColor:(UIColor *)backgroundColor textAlignment:(NSTextAlignment)textAlignment ract:(CGRect)ract numberOfLines:(NSInteger)numberOfLines textColor:(UIColor *)textColor;
 
 /**
- create a new label（等宽字体）
+ create a new label（特殊字体或等宽字体）
 
  @param title 文字
  @param font 字号
@@ -35,7 +36,7 @@
  @param numberOfLines 行数
  @param textColor 文字颜色
  @param fontName 字体名字
- @return 等宽字体专用
+ @return 特殊字体专用
  */
 + (UILabel *)labelWithTitle:(NSString *)title titleFont:(CGFloat)font backgroundColor:(UIColor *)backgroundColor textAlignment:(NSTextAlignment)textAlignment ract:(CGRect)ract numberOfLines:(NSInteger)numberOfLines textColor:(UIColor *)textColor fontName:(NSString *)fontName;
 

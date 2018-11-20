@@ -16,9 +16,6 @@
 		2C436FEC21906683000D0E54 /* UIViewController+PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FE621906682000D0E54 /* UIViewController+PushViewController.m */; };
 		2C436FED21906683000D0E54 /* UIViewController+NavigationBarHidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FE821906682000D0E54 /* UIViewController+NavigationBarHidden.m */; };
 		2C436FEE21906683000D0E54 /* UIViewController+NavigationBarStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FEA21906683000D0E54 /* UIViewController+NavigationBarStatusBar.m */; };
-		2C436FF121906698000D0E54 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FF021906698000D0E54 /* UILabel+Category.m */; };
-		2C436FF4219066AD000D0E54 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FF3219066AD000D0E54 /* UIView+Category.m */; };
-		2C436FF7219066C5000D0E54 /* UIButton+SetTitleColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C436FF6219066C5000D0E54 /* UIButton+SetTitleColorImage.m */; };
 		2C43700721906ECB000D0E54 /* AppDelegate+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C43700621906ECB000D0E54 /* AppDelegate+UI.m */; };
 		2C43700A21906ED7000D0E54 /* AppDelegate+SDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C43700921906ED7000D0E54 /* AppDelegate+SDK.m */; };
 		2C43700D21906F66000D0E54 /* HPBuglyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C43700C21906F66000D0E54 /* HPBuglyHelper.m */; };
@@ -62,6 +59,11 @@
 		2C498D062140DB4E0007DCBF /* UserDefaultCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D052140DB4D0007DCBF /* UserDefaultCenter.m */; };
 		2C498D172141003D0007DCBF /* HPNetworkStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D162141003D0007DCBF /* HPNetworkStatusManager.m */; };
 		2C498D1A214100950007DCBF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498D19214100950007DCBF /* Reachability.m */; };
+		2C49978021A3B2CE00A8040E /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49977321A3B2CE00A8040E /* UILabel+Category.m */; };
+		2C49978121A3B2CE00A8040E /* UIButton+SetTitleColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49977821A3B2CE00A8040E /* UIButton+SetTitleColor.m */; };
+		2C49978221A3B2CE00A8040E /* UIButton+SetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49977921A3B2CE00A8040E /* UIButton+SetImage.m */; };
+		2C49978321A3B2CE00A8040E /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49977B21A3B2CE00A8040E /* UIView+Category.m */; };
+		2C49978421A3B2CE00A8040E /* UIImageView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49977E21A3B2CE00A8040E /* UIImageView+Category.m */; };
 		2C5252F7219D298800DA1353 /* CKSundriesCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252F5219D298800DA1353 /* CKSundriesCenter.m */; };
 		2C5252FA219D3D8600DA1353 /* CKOrderListService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252F9219D3D8600DA1353 /* CKOrderListService.m */; };
 		2C5252FD219D3DB000DA1353 /* CKOrderListServiceTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5252FC219D3DAF00DA1353 /* CKOrderListServiceTable.m */; };
@@ -129,12 +131,6 @@
 		2C436FE821906682000D0E54 /* UIViewController+NavigationBarHidden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBarHidden.m"; sourceTree = "<group>"; };
 		2C436FE921906683000D0E54 /* UIViewController+PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PopViewController.h"; sourceTree = "<group>"; };
 		2C436FEA21906683000D0E54 /* UIViewController+NavigationBarStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBarStatusBar.m"; sourceTree = "<group>"; };
-		2C436FEF21906698000D0E54 /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
-		2C436FF021906698000D0E54 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
-		2C436FF2219066AD000D0E54 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
-		2C436FF3219066AD000D0E54 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
-		2C436FF5219066C4000D0E54 /* UIButton+SetTitleColorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SetTitleColorImage.h"; sourceTree = "<group>"; };
-		2C436FF6219066C5000D0E54 /* UIButton+SetTitleColorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SetTitleColorImage.m"; sourceTree = "<group>"; };
 		2C43700521906ECB000D0E54 /* AppDelegate+UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UI.h"; sourceTree = "<group>"; };
 		2C43700621906ECB000D0E54 /* AppDelegate+UI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UI.m"; sourceTree = "<group>"; };
 		2C43700821906ED7000D0E54 /* AppDelegate+SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SDK.h"; sourceTree = "<group>"; };
@@ -232,6 +228,16 @@
 		2C498D162141003D0007DCBF /* HPNetworkStatusManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPNetworkStatusManager.m; sourceTree = "<group>"; };
 		2C498D18214100950007DCBF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		2C498D19214100950007DCBF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		2C49977321A3B2CE00A8040E /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
+		2C49977421A3B2CE00A8040E /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
+		2C49977621A3B2CE00A8040E /* UIButton+SetTitleColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SetTitleColor.h"; sourceTree = "<group>"; };
+		2C49977721A3B2CE00A8040E /* UIButton+SetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SetImage.h"; sourceTree = "<group>"; };
+		2C49977821A3B2CE00A8040E /* UIButton+SetTitleColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SetTitleColor.m"; sourceTree = "<group>"; };
+		2C49977921A3B2CE00A8040E /* UIButton+SetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SetImage.m"; sourceTree = "<group>"; };
+		2C49977B21A3B2CE00A8040E /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		2C49977C21A3B2CE00A8040E /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		2C49977E21A3B2CE00A8040E /* UIImageView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Category.m"; sourceTree = "<group>"; };
+		2C49977F21A3B2CE00A8040E /* UIImageView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Category.h"; sourceTree = "<group>"; };
 		2C5252E0219D24E600DA1353 /* RGBColorConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBColorConst.h; sourceTree = "<group>"; };
 		2C5252E1219D250C00DA1353 /* SystemFontConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemFontConst.h; sourceTree = "<group>"; };
 		2C5252F5219D298800DA1353 /* CKSundriesCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSundriesCenter.m; sourceTree = "<group>"; };
@@ -372,33 +378,6 @@
 				2C1A9F3320EE043E00E21FEA /* Info.plist */,
 			);
 			path = CKYSTemplateUITests;
-			sourceTree = "<group>";
-		};
-		2C436FF8219066CE000D0E54 /* UIView(类工厂方法初始化一个View) */ = {
-			isa = PBXGroup;
-			children = (
-				2C436FF2219066AD000D0E54 /* UIView+Category.h */,
-				2C436FF3219066AD000D0E54 /* UIView+Category.m */,
-			);
-			path = "UIView(类工厂方法初始化一个View)";
-			sourceTree = "<group>";
-		};
-		2C436FF9219066DB000D0E54 /* UIButton(ButtonSetImage抽离为分类, 方便调试) */ = {
-			isa = PBXGroup;
-			children = (
-				2C436FF5219066C4000D0E54 /* UIButton+SetTitleColorImage.h */,
-				2C436FF6219066C5000D0E54 /* UIButton+SetTitleColorImage.m */,
-			);
-			path = "UIButton(ButtonSetImage抽离为分类, 方便调试)";
-			sourceTree = "<group>";
-		};
-		2C436FFA219066E7000D0E54 /* UILabel(label类工厂方法) */ = {
-			isa = PBXGroup;
-			children = (
-				2C436FEF21906698000D0E54 /* UILabel+Category.h */,
-				2C436FF021906698000D0E54 /* UILabel+Category.m */,
-			);
-			path = "UILabel(label类工厂方法)";
 			sourceTree = "<group>";
 		};
 		2C436FFB219066F8000D0E54 /* UIViewController(抽离Pop&Push操作方便调试) */ = {
@@ -674,11 +653,9 @@
 		2C498CC62140CEA30007DCBF /* UI(UI相关分类) */ = {
 			isa = PBXGroup;
 			children = (
+				2C49977121A3B2CE00A8040E /* UISystemFramework */,
 				2C4370E2219075CB000D0E54 /* NavBarItemCategory(导航栏左右两侧按钮分类) */,
 				2C436FFB219066F8000D0E54 /* UIViewController(抽离Pop&Push操作方便调试) */,
-				2C436FFA219066E7000D0E54 /* UILabel(label类工厂方法) */,
-				2C436FF9219066DB000D0E54 /* UIButton(ButtonSetImage抽离为分类, 方便调试) */,
-				2C436FF8219066CE000D0E54 /* UIView(类工厂方法初始化一个View) */,
 				2C498CF02140D6160007DCBF /* DataEmptyView(空页面占位UI) */,
 				2C498CED2140CF0C0007DCBF /* LoadingView(加载圈UI) */,
 				2C498CDD2140CEC00007DCBF /* NetTipView(网络提示抽离分类) */,
@@ -727,6 +704,55 @@
 				2C498CF62140D6160007DCBF /* HPDataEmptyView.m */,
 			);
 			path = "DataEmptyView(空页面占位UI)";
+			sourceTree = "<group>";
+		};
+		2C49977121A3B2CE00A8040E /* UISystemFramework */ = {
+			isa = PBXGroup;
+			children = (
+				2C49977221A3B2CE00A8040E /* UILabel(label类工厂方法) */,
+				2C49977521A3B2CE00A8040E /* UIButton */,
+				2C49977A21A3B2CE00A8040E /* UIView(类工厂方法初始化一个View) */,
+				2C49977D21A3B2CE00A8040E /* UIImageView(类工厂方法初始化一个UIImageView) */,
+			);
+			path = UISystemFramework;
+			sourceTree = "<group>";
+		};
+		2C49977221A3B2CE00A8040E /* UILabel(label类工厂方法) */ = {
+			isa = PBXGroup;
+			children = (
+				2C49977421A3B2CE00A8040E /* UILabel+Category.h */,
+				2C49977321A3B2CE00A8040E /* UILabel+Category.m */,
+			);
+			path = "UILabel(label类工厂方法)";
+			sourceTree = "<group>";
+		};
+		2C49977521A3B2CE00A8040E /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				2C49977621A3B2CE00A8040E /* UIButton+SetTitleColor.h */,
+				2C49977821A3B2CE00A8040E /* UIButton+SetTitleColor.m */,
+				2C49977721A3B2CE00A8040E /* UIButton+SetImage.h */,
+				2C49977921A3B2CE00A8040E /* UIButton+SetImage.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		2C49977A21A3B2CE00A8040E /* UIView(类工厂方法初始化一个View) */ = {
+			isa = PBXGroup;
+			children = (
+				2C49977C21A3B2CE00A8040E /* UIView+Category.h */,
+				2C49977B21A3B2CE00A8040E /* UIView+Category.m */,
+			);
+			path = "UIView(类工厂方法初始化一个View)";
+			sourceTree = "<group>";
+		};
+		2C49977D21A3B2CE00A8040E /* UIImageView(类工厂方法初始化一个UIImageView) */ = {
+			isa = PBXGroup;
+			children = (
+				2C49977F21A3B2CE00A8040E /* UIImageView+Category.h */,
+				2C49977E21A3B2CE00A8040E /* UIImageView+Category.m */,
+			);
+			path = "UIImageView(类工厂方法初始化一个UIImageView)";
 			sourceTree = "<group>";
 		};
 		2C5252F4219D298800DA1353 /* SundriesCenter(任务派发) */ = {
@@ -1220,30 +1246,31 @@
 				2C4371BE219075CC000D0E54 /* A_CellFooterView.m in Sources */,
 				2C43719E219075CC000D0E54 /* UIViewController+NavLeftItemBack.m in Sources */,
 				2C498CB92140CD410007DCBF /* HPSearchItem.m in Sources */,
+				2C49978421A3B2CE00A8040E /* UIImageView+Category.m in Sources */,
 				2C43719F219075CC000D0E54 /* UIViewController+NavBarRightItemCancel.m in Sources */,
 				2C5252FD219D3DB000DA1353 /* CKOrderListServiceTable.m in Sources */,
 				2CACD0CE219567B400180412 /* LoginServiceResult.m in Sources */,
 				2CACD0C5219564E200180412 /* NetworkService.m in Sources */,
 				2C4371B9219075CC000D0E54 /* A_TableViewCell+SetVideoViewLayout.m in Sources */,
 				2C498CA42140CC970007DCBF /* UIViewController+SearchItem.m in Sources */,
+				2C49978121A3B2CE00A8040E /* UIButton+SetTitleColor.m in Sources */,
 				2C4371AF219075CC000D0E54 /* A_PlaceHolderView.m in Sources */,
 				2C4371BB219075CC000D0E54 /* A_UserInfoView.m in Sources */,
 				2C4371B7219075CC000D0E54 /* A_TableViewCell+SetLabelContentLayout.m in Sources */,
 				2C4649B4219877C400F71BA1 /* CKSystem.m in Sources */,
-				2C436FF121906698000D0E54 /* UILabel+Category.m in Sources */,
-				2C436FF7219066C5000D0E54 /* UIButton+SetTitleColorImage.m in Sources */,
 				2C498C902140C69C0007DCBF /* HPDemoNotificationHelper.m in Sources */,
 				2C436FED21906683000D0E54 /* UIViewController+NavigationBarHidden.m in Sources */,
 				2C4371BD219075CC000D0E54 /* A_ImageCollectionViewHelper.m in Sources */,
 				2C4371C0219075CC000D0E54 /* A_ImageCollectionView.m in Sources */,
 				2C525300219D3DCC00DA1353 /* CKOrderListItem.m in Sources */,
-				2C436FF4219066AD000D0E54 /* UIView+Category.m in Sources */,
+				2C49978021A3B2CE00A8040E /* UILabel+Category.m in Sources */,
 				2C4371BC219075CC000D0E54 /* A_ImageCollectionViewCell.m in Sources */,
 				2CACD0D1219567CE00180412 /* NetworkServiceResult.m in Sources */,
 				2C498D172141003D0007DCBF /* HPNetworkStatusManager.m in Sources */,
 				2C4371BF219075CC000D0E54 /* A_CellHeaderView.m in Sources */,
 				2C498D062140DB4E0007DCBF /* UserDefaultCenter.m in Sources */,
 				2C43700D21906F66000D0E54 /* HPBuglyHelper.m in Sources */,
+				2C49978321A3B2CE00A8040E /* UIView+Category.m in Sources */,
 				2C436FEC21906683000D0E54 /* UIViewController+PushViewController.m in Sources */,
 				2C437159219075CC000D0E54 /* A_Item.m in Sources */,
 				2C4370182190726D000D0E54 /* HPBaiduMapHelper.m in Sources */,
@@ -1278,6 +1305,7 @@
 				2C1A9F1D20EE043E00E21FEA /* main.m in Sources */,
 				2C52530C219D5B4700DA1353 /* DocumentDirectoryHelper.m in Sources */,
 				2C1A9F0F20EE043E00E21FEA /* AppDelegate.m in Sources */,
+				2C49978221A3B2CE00A8040E /* UIButton+SetImage.m in Sources */,
 				2C498C8D2140C54C0007DCBF /* HPNotificationObserverCenter.m in Sources */,
 				2C437155219075CC000D0E54 /* A_ServiceResult.m in Sources */,
 				2C4371C2219075CC000D0E54 /* A_TableViewCell.m in Sources */,
