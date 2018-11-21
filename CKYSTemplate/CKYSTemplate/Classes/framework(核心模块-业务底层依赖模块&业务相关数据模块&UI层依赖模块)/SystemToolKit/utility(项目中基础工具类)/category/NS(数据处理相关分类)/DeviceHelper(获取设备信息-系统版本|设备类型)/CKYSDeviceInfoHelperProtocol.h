@@ -10,7 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-hh
 @protocol CKYSDeviceInfoHelperProtocol <CKYSDeviceTypeInfoProtocol>
 
 /** app IMEI */

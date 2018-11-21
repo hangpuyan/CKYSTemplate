@@ -43,7 +43,7 @@ static const void *CKYSViewControllerLeftItemKey = &CKYSViewControllerLeftItemKe
         h = 50;
     }
     if (!self.leftItem) {
-        self.leftItem = [UIButton buttonWithImageNormalString:@"hp_button_back_image_normal" imageHilightString:@"hp_button_back_image_normal" imageDisenabledString:@"hp_button_back_image_normal" imageBgNormalString:@"" imageBgHilightString:nil imageBgDisenabledString:nil backgroundColor:[UIColor clearColor] tag:0 rect:CGRectMake(CKYSViewControllerLeftItemXOffsetConst*0.5, y, w, h) targrt:target action:action forControlEvents:UIControlEventTouchUpInside];
+        self.leftItem = [UIButton buttonWithImageNormalString:@"ckys_source_center_button_back_image_normal" imageHilightString:@"ckys_source_center_button_back_image_normal" imageDisenabledString:@"ckys_source_center_button_back_image_normal" imageBgNormalString:@"" imageBgHilightString:nil imageBgDisenabledString:nil backgroundColor:[UIColor clearColor] tag:0 rect:CGRectMake(CKYSViewControllerLeftItemXOffsetConst*0.5, y, w, h) targrt:target action:action forControlEvents:UIControlEventTouchUpInside];
         [parentView addSubview:self.leftItem];
     }
 }

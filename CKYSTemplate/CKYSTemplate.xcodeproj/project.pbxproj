@@ -47,6 +47,16 @@
 		2C4371CC21908288000D0E54 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4371CA21908288000D0E54 /* NSMutableDictionary+Safe.m */; };
 		2C4649B4219877C400F71BA1 /* CKSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4649B3219877C400F71BA1 /* CKSystem.m */; };
 		2C4649B7219877E800F71BA1 /* CKDefaultSystemImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4649B6219877E800F71BA1 /* CKDefaultSystemImp.m */; };
+		2C49058E21A4F39D0070CE87 /* CKYSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49058A21A4F39D0070CE87 /* CKYSTextField.m */; };
+		2C49059021A4F39D0070CE87 /* CKYSTextfiledSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49058C21A4F39D0070CE87 /* CKYSTextfiledSearch.m */; };
+		2C49059321A4F3BD0070CE87 /* CKYSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49059221A4F3BD0070CE87 /* CKYSLoginViewController.m */; };
+		2C49059921A4F4E80070CE87 /* CKTimerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49059621A4F4E80070CE87 /* CKTimerHelper.m */; };
+		2C49059A21A4F4E80070CE87 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49059721A4F4E80070CE87 /* NSTimer+Addition.m */; };
+		2C49059D21A4FD3E0070CE87 /* CKYSLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C49059C21A4FD3E0070CE87 /* CKYSLoginTextField.m */; };
+		2C4905A121A502830070CE87 /* CKYSPhoneNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4905A021A502830070CE87 /* CKYSPhoneNumberTextField.m */; };
+		2C4905A421A504180070CE87 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4905A221A504180070CE87 /* NSString+Emoji.m */; };
+		2C4905A721A50D650070CE87 /* NSString+PhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4905A621A50D650070CE87 /* NSString+PhoneNumber.m */; };
+		2C4905AB21A50FC40070CE87 /* CKYSLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4905AA21A50FC40070CE87 /* CKYSLoginView.m */; };
 		2C498C8A2140C4B70007DCBF /* HPNotificationPostCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C892140C4B70007DCBF /* HPNotificationPostCenter.m */; };
 		2C498C8D2140C54C0007DCBF /* HPNotificationObserverCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C8C2140C54C0007DCBF /* HPNotificationObserverCenter.m */; };
 		2C498C902140C69C0007DCBF /* HPDemoNotificationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C498C8F2140C69C0007DCBF /* HPDemoNotificationHelper.m */; };
@@ -200,6 +210,26 @@
 		2C4649B3219877C400F71BA1 /* CKSystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKSystem.m; sourceTree = "<group>"; };
 		2C4649B5219877E800F71BA1 /* CKDefaultSystemImp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKDefaultSystemImp.h; sourceTree = "<group>"; };
 		2C4649B6219877E800F71BA1 /* CKDefaultSystemImp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKDefaultSystemImp.m; sourceTree = "<group>"; };
+		2C49058821A4F39D0070CE87 /* CKYSTextfiledSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSTextfiledSearch.h; sourceTree = "<group>"; };
+		2C49058A21A4F39D0070CE87 /* CKYSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKYSTextField.m; sourceTree = "<group>"; };
+		2C49058C21A4F39D0070CE87 /* CKYSTextfiledSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKYSTextfiledSearch.m; sourceTree = "<group>"; };
+		2C49058D21A4F39D0070CE87 /* CKYSTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSTextField.h; sourceTree = "<group>"; };
+		2C49059121A4F3BD0070CE87 /* CKYSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKYSLoginViewController.h; sourceTree = "<group>"; };
+		2C49059221A4F3BD0070CE87 /* CKYSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKYSLoginViewController.m; sourceTree = "<group>"; };
+		2C49059521A4F4E80070CE87 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
+		2C49059621A4F4E80070CE87 /* CKTimerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKTimerHelper.m; sourceTree = "<group>"; };
+		2C49059721A4F4E80070CE87 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
+		2C49059821A4F4E80070CE87 /* CKTimerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTimerHelper.h; sourceTree = "<group>"; };
+		2C49059B21A4FD3E0070CE87 /* CKYSLoginTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYSLoginTextField.h; sourceTree = "<group>"; };
+		2C49059C21A4FD3E0070CE87 /* CKYSLoginTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYSLoginTextField.m; sourceTree = "<group>"; };
+		2C49059F21A502830070CE87 /* CKYSPhoneNumberTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYSPhoneNumberTextField.h; sourceTree = "<group>"; };
+		2C4905A021A502830070CE87 /* CKYSPhoneNumberTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYSPhoneNumberTextField.m; sourceTree = "<group>"; };
+		2C4905A221A504180070CE87 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		2C4905A321A504180070CE87 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		2C4905A521A50D650070CE87 /* NSString+PhoneNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PhoneNumber.h"; sourceTree = "<group>"; };
+		2C4905A621A50D650070CE87 /* NSString+PhoneNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PhoneNumber.m"; sourceTree = "<group>"; };
+		2C4905A921A50FC40070CE87 /* CKYSLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKYSLoginView.h; sourceTree = "<group>"; };
+		2C4905AA21A50FC40070CE87 /* CKYSLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKYSLoginView.m; sourceTree = "<group>"; };
 		2C498C882140C4B70007DCBF /* HPNotificationPostCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPNotificationPostCenter.h; sourceTree = "<group>"; };
 		2C498C892140C4B70007DCBF /* HPNotificationPostCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPNotificationPostCenter.m; sourceTree = "<group>"; };
 		2C498C8B2140C54C0007DCBF /* HPNotificationObserverCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPNotificationObserverCenter.h; sourceTree = "<group>"; };
@@ -426,6 +456,8 @@
 		2C436FFE21906ACC000D0E54 /* Module_B */ = {
 			isa = PBXGroup;
 			children = (
+				2C4905A821A50FA40070CE87 /* Controller */,
+				2C49059E21A4FDBE0070CE87 /* View */,
 			);
 			path = Module_B;
 			sourceTree = "<group>";
@@ -631,10 +663,58 @@
 		2C4371C921908288000D0E54 /* Dict+Safe(字典在填充value时进行安全判断防止crash) */ = {
 			isa = PBXGroup;
 			children = (
+				2C4905A321A504180070CE87 /* NSString+Emoji.h */,
+				2C4905A221A504180070CE87 /* NSString+Emoji.m */,
+				2C4905A521A50D650070CE87 /* NSString+PhoneNumber.h */,
+				2C4905A621A50D650070CE87 /* NSString+PhoneNumber.m */,
 				2C4371CA21908288000D0E54 /* NSMutableDictionary+Safe.m */,
 				2C4371CB21908288000D0E54 /* NSMutableDictionary+Safe.h */,
 			);
 			path = "Dict+Safe(字典在填充value时进行安全判断防止crash)";
+			sourceTree = "<group>";
+		};
+		2C49058721A4F39D0070CE87 /* Texfield */ = {
+			isa = PBXGroup;
+			children = (
+				2C49058821A4F39D0070CE87 /* CKYSTextfiledSearch.h */,
+				2C49058A21A4F39D0070CE87 /* CKYSTextField.m */,
+				2C49058C21A4F39D0070CE87 /* CKYSTextfiledSearch.m */,
+				2C49058D21A4F39D0070CE87 /* CKYSTextField.h */,
+			);
+			path = Texfield;
+			sourceTree = "<group>";
+		};
+		2C49059421A4F4E80070CE87 /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				2C49059521A4F4E80070CE87 /* NSTimer+Addition.h */,
+				2C49059621A4F4E80070CE87 /* CKTimerHelper.m */,
+				2C49059721A4F4E80070CE87 /* NSTimer+Addition.m */,
+				2C49059821A4F4E80070CE87 /* CKTimerHelper.h */,
+			);
+			path = NSTimer;
+			sourceTree = "<group>";
+		};
+		2C49059E21A4FDBE0070CE87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C49059B21A4FD3E0070CE87 /* CKYSLoginTextField.h */,
+				2C49059C21A4FD3E0070CE87 /* CKYSLoginTextField.m */,
+				2C49059F21A502830070CE87 /* CKYSPhoneNumberTextField.h */,
+				2C4905A021A502830070CE87 /* CKYSPhoneNumberTextField.m */,
+				2C4905A921A50FC40070CE87 /* CKYSLoginView.h */,
+				2C4905AA21A50FC40070CE87 /* CKYSLoginView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C4905A821A50FA40070CE87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C49059121A4F3BD0070CE87 /* CKYSLoginViewController.h */,
+				2C49059221A4F3BD0070CE87 /* CKYSLoginViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		2C498C922140CC970007DCBF /* category */ = {
@@ -697,6 +777,7 @@
 		2C498CEF2140CF3A0007DCBF /* NS(数据处理相关分类) */ = {
 			isa = PBXGroup;
 			children = (
+				2C49059421A4F4E80070CE87 /* NSTimer */,
 				2C4997D321A3D8B600A8040E /* DeviceHelper(获取设备信息-系统版本|设备类型) */,
 				2C5593042192B1190035C4EB /* Obj+Nil(判断一个字符串或者对象是否为空) */,
 				2C4371C921908288000D0E54 /* Dict+Safe(字典在填充value时进行安全判断防止crash) */,
@@ -718,6 +799,7 @@
 		2C49977121A3B2CE00A8040E /* UISystemFramework */ = {
 			isa = PBXGroup;
 			children = (
+				2C49058721A4F39D0070CE87 /* Texfield */,
 				2C49977221A3B2CE00A8040E /* UILabel(label类工厂方法) */,
 				2C49977521A3B2CE00A8040E /* UIButton */,
 				2C49977A21A3B2CE00A8040E /* UIView(类工厂方法初始化一个View) */,
@@ -1258,6 +1340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C4905AB21A50FC40070CE87 /* CKYSLoginView.m in Sources */,
 				2C5BBF90213FD0F000A1A6D0 /* CKAppSystemInfo.m in Sources */,
 				2C4371C1219075CC000D0E54 /* A_VideoView.m in Sources */,
 				2CACD0CB2195677100180412 /* LoginServiceParameter.m in Sources */,
@@ -1267,17 +1350,22 @@
 				2C525309219D495800DA1353 /* CKKeyedArchiverHelper.m in Sources */,
 				2C4371BE219075CC000D0E54 /* A_CellFooterView.m in Sources */,
 				2C43719E219075CC000D0E54 /* UIViewController+NavLeftItemBack.m in Sources */,
+				2C4905A721A50D650070CE87 /* NSString+PhoneNumber.m in Sources */,
+				2C49059021A4F39D0070CE87 /* CKYSTextfiledSearch.m in Sources */,
+				2C4905A421A504180070CE87 /* NSString+Emoji.m in Sources */,
 				2C498CB92140CD410007DCBF /* HPSearchItem.m in Sources */,
 				2C49978421A3B2CE00A8040E /* UIImageView+Category.m in Sources */,
 				2C43719F219075CC000D0E54 /* UIViewController+NavBarRightItemCancel.m in Sources */,
 				2C5252FD219D3DB000DA1353 /* CKOrderListServiceTable.m in Sources */,
 				2CACD0CE219567B400180412 /* LoginServiceResult.m in Sources */,
+				2C49059D21A4FD3E0070CE87 /* CKYSLoginTextField.m in Sources */,
 				2CACD0C5219564E200180412 /* NetworkService.m in Sources */,
 				2C4371B9219075CC000D0E54 /* A_TableViewCell+SetVideoViewLayout.m in Sources */,
 				2C498CA42140CC970007DCBF /* UIViewController+SearchItem.m in Sources */,
 				2C49978121A3B2CE00A8040E /* UIButton+SetTitleColor.m in Sources */,
 				2C4371AF219075CC000D0E54 /* A_PlaceHolderView.m in Sources */,
 				2C4371BB219075CC000D0E54 /* A_UserInfoView.m in Sources */,
+				2C49059921A4F4E80070CE87 /* CKTimerHelper.m in Sources */,
 				2C4371B7219075CC000D0E54 /* A_TableViewCell+SetLabelContentLayout.m in Sources */,
 				2C4649B4219877C400F71BA1 /* CKSystem.m in Sources */,
 				2C498C902140C69C0007DCBF /* HPDemoNotificationHelper.m in Sources */,
@@ -1291,10 +1379,12 @@
 				2C498D172141003D0007DCBF /* HPNetworkStatusManager.m in Sources */,
 				2C4371BF219075CC000D0E54 /* A_CellHeaderView.m in Sources */,
 				2C498D062140DB4E0007DCBF /* UserDefaultCenter.m in Sources */,
+				2C49058E21A4F39D0070CE87 /* CKYSTextField.m in Sources */,
 				2C43700D21906F66000D0E54 /* HPBuglyHelper.m in Sources */,
 				2C49978321A3B2CE00A8040E /* UIView+Category.m in Sources */,
 				2C436FEC21906683000D0E54 /* UIViewController+PushViewController.m in Sources */,
 				2C437159219075CC000D0E54 /* A_Item.m in Sources */,
+				2C49059A21A4F4E80070CE87 /* NSTimer+Addition.m in Sources */,
 				2C4370182190726D000D0E54 /* HPBaiduMapHelper.m in Sources */,
 				2C436FEB21906683000D0E54 /* UIViewController+PopViewController.m in Sources */,
 				2C498D1A214100950007DCBF /* Reachability.m in Sources */,
@@ -1316,6 +1406,7 @@
 				2C4371C8219080B9000D0E54 /* HPBaseItem.m in Sources */,
 				2C43701421907102000D0E54 /* HPSDKInitManager.m in Sources */,
 				2C498C8A2140C4B70007DCBF /* HPNotificationPostCenter.m in Sources */,
+				2C4905A121A502830070CE87 /* CKYSPhoneNumberTextField.m in Sources */,
 				2C525304219D42A000DA1353 /* ANFMDBUtils.m in Sources */,
 				2C498CF82140D6160007DCBF /* HPPlaceHolderView.m in Sources */,
 				2C437172219075CC000D0E54 /* HPAReleaseProtocolHelper.m in Sources */,
@@ -1326,6 +1417,7 @@
 				2C498CF92140D6160007DCBF /* HPDataEmptyView.m in Sources */,
 				2C4371BA219075CC000D0E54 /* A_TableViewCell+SetFooterViewLayout.m in Sources */,
 				2C1A9F1D20EE043E00E21FEA /* main.m in Sources */,
+				2C49059321A4F3BD0070CE87 /* CKYSLoginViewController.m in Sources */,
 				2C52530C219D5B4700DA1353 /* DocumentDirectoryHelper.m in Sources */,
 				2C1A9F0F20EE043E00E21FEA /* AppDelegate.m in Sources */,
 				2C49978221A3B2CE00A8040E /* UIButton+SetImage.m in Sources */,

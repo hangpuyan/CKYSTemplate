@@ -38,6 +38,9 @@
 #import "LoginDataHelper.h"
 #import "LoginDataItem.h"
 
+#import "UIButton+Title.h"
+#import "CKYSLoginViewController.h"
+
 @interface A_ViewController ()
 
 @end
@@ -47,6 +50,7 @@
     id _parameter;
     NSMutableArray <A_Item *>*dataArrayMinePage;
     A_TableView *_sourceCenterMainPageTableView;
+    UIButton *_loginButton;
 }
 
 #pragma mark - A_ViewControllerInputProtocol
@@ -83,13 +87,13 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    [self setObjViewControllerNavigationBarHidden:YES];
+//    [self setObjViewControllerNavigationBarHidden:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
-    [self setObjViewControllerNavigationBarHidden:NO];
+//    [self setObjViewControllerNavigationBarHidden:NO];
 }
 
 #pragma mark - 网络状态监控使用
@@ -146,7 +150,8 @@
 
 #pragma mark - initUI
 - (void)private_initUI {
-    [self private_initMinePageTableView];
+//    [self private_initMinePageTableView];
+    [self private_initLoginButton];
     [self initLeftItemWithTargrt:self action:@selector(private_navLeftItemBackAction:) parentView:self.view];
 }
 
@@ -161,6 +166,20 @@
         }
         [self.view addSubview:_sourceCenterMainPageTableView];
     }
+}
+
+- (void)private_initLoginButton {
+    _loginButton = [UIButton buttonWithTitle:@"登录" titleFont:18 titleColorNormal:[UIColor whiteColor] titleColorHilight:[UIColor lightGrayColor] titleColorDisable:[UIColor lightGrayColor] backgroundImageNoraml:@"" backgroundImageHilight:@"" backgroundImageDisable:@"" backgroundColor:[UIColor redColor] cornerRadius:3 enabled:YES rect:CGRectMake(0, 0, 100, 50) Targrt:self action:@selector(private_loginButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_loginButton];
+    _loginButton.center = self.view.center;
+}
+
+- (void)private_loginButtonAction:(UIButton *)sender {
+    [CKYSLoginViewController presentToLoginViewControllerFromViewController:self];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [CKYSLoginViewController pushToLoginViewControllerFromViewController:self];
 }
 
 - (void)dealloc {
